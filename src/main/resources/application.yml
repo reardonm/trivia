@@ -1,0 +1,4 @@
+micronaut:
+  application:
+    name: trivia
+redis.uri: redis://localhost
