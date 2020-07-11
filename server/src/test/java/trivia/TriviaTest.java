@@ -17,5 +17,4 @@ public class TriviaTest {
     void testItWorks() {
         Assertions.assertTrue(application.isRunning());
     }
-
 }

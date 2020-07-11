@@ -1,0 +1,22 @@
+micronaut:
+  application:
+    name: trivia
+redis:
+  uri: redis://localhost
+---
+#tag::cors[]
+micronaut:
+  server:
+    cors:
+      enabled: true
+#end::cors[]
+---
+#tag::staticResources[]
+micronaut:
+  router:
+    static-resources:
+      default:
+        enabled: true
+        mapping: "/**"
+        paths: "classpath:public"
+#end::staticResources[]

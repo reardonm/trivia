@@ -1,3 +1,4 @@
+profile: service
 applicationType: default
 defaultPackage: trivia
 testFramework: junit

@@ -11,5 +11,3 @@ out/
 .project
 .settings
 .classpath
-server/build/
-out
