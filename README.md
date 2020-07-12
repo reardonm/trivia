@@ -3,7 +3,7 @@
 ## Running locally
 Run the server on port 8080 (no cors)
 ```
-~ ./gradlew server:run
+./gradlew server:run
 ```
 Run client on port 3000
 ```
@@ -22,3 +22,6 @@ Execute jar
 ```
 java -jar server/build/libs/server-0.1-all.jar
 ```
+---
+
+Questions from https://opentdb.com/api_config.php
