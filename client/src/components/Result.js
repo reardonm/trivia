@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 function Result(props) {
   return (
     <div className="result">
-      You prefer <strong>{props.quizResult}</strong>!
+      RESULT... <strong>{props.gameResult}</strong>
     </div>
   );
 }
 
 Result.propTypes = {
-  quizResult: PropTypes.string.isRequired,
+  gameResult: PropTypes.string.isRequired,
 };
 
 export default Result;

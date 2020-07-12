@@ -1,4 +1,4 @@
-var mockQuestions = [
+var questionsApi = [
     {
       category: "Science: Computers",
       type: "multiple",
@@ -85,4 +85,4 @@ var mockQuestions = [
     },
 ];
 
-export default mockQuestions;
+export default questionsApi;

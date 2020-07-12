@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import Game from './components/Game';
 import Result from './components/Result';
-import mockQuestions from './mockQuestions';
+import GameList from './components/GameList';
+import questionsApi from './api/Questions';
+import categoriesApi from './api/Categories';
+import gamesApi from './api/Games';
 import './App.css';
 import {SERVER_URL} from "./config";
 
@@ -10,6 +13,10 @@ class App extends Component {
     super(props);
 
     this.state = {
+      currentGame: 0,
+      newGameName: '',
+      newGameCategory: 'All',
+
       counter: 0,
       questionId: 1,
       question: '',
@@ -17,13 +24,16 @@ class App extends Component {
       userAnswer: '',
       answersCount: {},
       result: '',
-
       message: null,
     };
 
     // hard bind event handlers used in render
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
-    this.onValueChange = this.onValueChange.bind(this);
+    this.handleGameSelected = this.handleGameSelected.bind(this);
+    this.handleNewGameName = this.handleNewGameName.bind(this);
+    this.handleNewGameCategory = this.handleNewGameCategory.bind(this);
+    this.handleNewGame = this.handleNewGame.bind(this);
+
   }
 
   getMessage = e => {
@@ -36,24 +46,43 @@ class App extends Component {
 
   componentDidMount() {
     this.setState({
-      question: mockQuestions[0].question,
-      answerOptions: mockQuestions[0].answers
+      question: questionsApi[0].question,
+      answerOptions: questionsApi[0].answers
     });
   }
 
-  onValueChange(event) {
-    this.setState({
-      userAnswer: event.target.value
-    });
+  handleNewGameName(name){
+    this.setState((state) => ({
+      newGameName: name,
+    }));
+  }
+
+  handleNewGameCategory(category){
+    this.setState((state) => ({
+      newGameCategory: category,
+    }));
+  }
+
+  handleNewGame(e){
+    e.preventDefault();
+    this.setState((state) => ({
+      currentGame: 999,
+    }));
+  }
+
+  handleGameSelected(gameId) {
+    this.setState((state) => ({
+      currentGame: gameId,
+    }));
   }
 
   handleAnswerSelected(event) {
     this.setUserAnswer(event.currentTarget.value);
-    if (this.state.questionId < mockQuestions.length) {
-        setTimeout(() => this.setNextQuestion(), 300);
-      } else {
-        setTimeout(() => this.setResults(this.getResults()), 300);
-      }
+    if (this.state.questionId < questionsApi.length) {
+        setTimeout(() => this.setNextQuestion(), 600);
+    } else {
+        setTimeout(() => this.setResults(this.getResults()), 600);
+    }
   }
 
   setUserAnswer(answer) {
@@ -72,8 +101,8 @@ class App extends Component {
     this.setState({
       counter: counter,
       questionId: questionId,
-      question: mockQuestions[counter].question,
-      answerOptions: mockQuestions[counter].answers,
+      question: questionsApi[counter].question,
+      answerOptions: questionsApi[counter].answers,
       userAnswer: ''
     });
   }
@@ -87,11 +116,31 @@ class App extends Component {
   }
 
   setResults (result) {
-    if (result.length === 1) {
-      this.setState({ result: result[0] });
-    } else {
-      this.setState({ result: 'Undetermined' });
-    }
+    const r = (result.length === 1) ? result[0] : 'Undetermined';
+    alert(r);
+    this.setState({
+      result: '',
+      currentGame: 0,
+      newGameName: '',
+      newGameCategory: 'All',
+      question: '',
+      counter: 0,
+    });
+  }
+
+  renderSelectGame() {
+    return (
+      <GameList
+        games={gamesApi}
+        categories={categoriesApi}
+        newGameName={this.state.newGameName}
+        newGameCategory={this.state.newGameCategory}
+        onGameSelected={this.handleGameSelected}
+        onNewGameName={this.handleNewGameName}
+        onNewGameCategory={this.handleNewGameCategory}
+        onNewGame={this.handleNewGame}
+      />
+    );
   }
 
   renderGame() {
@@ -101,7 +150,7 @@ class App extends Component {
         answerOptions={this.state.answerOptions}
         questionId={this.state.questionId}
         question={this.state.question}
-        questionTotal={mockQuestions.length}
+        questionTotal={questionsApi.length}
         onAnswerSelected={this.handleAnswerSelected}
       />
     );
@@ -119,9 +168,10 @@ class App extends Component {
         <div className="App-header">
           <h2>Trivia</h2>
         </div>
-        {this.state.result ? this.renderResult() : this.renderGame()}
 
+        { this.state.currentGame > 0 ? this.renderGame() : this.renderSelectGame() }
 
+        <p/>
         <div>
           <form onSubmit={this.getMessage}>
             <label>Call server: </label>
@@ -136,7 +186,6 @@ class App extends Component {
             }
           </p>
         </div>
-          Selected option is : {this.state.userAnswer}
       </div>
     );
   }
