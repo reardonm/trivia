@@ -21,6 +21,8 @@ dependencies {
     annotationProcessor(platform("io.micronaut:micronaut-bom:$micronautVersion"))
     annotationProcessor("io.micronaut:micronaut-inject-java")
     annotationProcessor("io.micronaut:micronaut-validation")
+    annotationProcessor("org.projectlombok:lombok:$lombokVersion")
+
     implementation(platform("io.micronaut:micronaut-bom:$micronautVersion"))
     implementation("io.micronaut:micronaut-inject")
     implementation("io.micronaut:micronaut-validation")
@@ -29,16 +31,21 @@ dependencies {
     implementation("io.micronaut:micronaut-http-server-netty")
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut.redis:micronaut-redis-lettuce")
+    compileOnly("org.projectlombok:lombok:$lombokVersion")
     developmentOnly("io.micronaut:micronaut-runtime-osx:$micronautVersion")
     runtimeOnly("ch.qos.logback:logback-classic")
     testAnnotationProcessor(platform("io.micronaut:micronaut-bom:$micronautVersion"))
     testAnnotationProcessor("io.micronaut:micronaut-inject-java")
+    testAnnotationProcessor("org.projectlombok:lombok:$lombokVersion")
     testImplementation(platform("io.micronaut:micronaut-bom:$micronautVersion"))
     testImplementation("org.junit.jupiter:junit-jupiter-api")
     testImplementation("io.micronaut.test:micronaut-test-junit5")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
-    testImplementation(platform("org.testcontainers:testcontainers-bom:1.14.3"))
-    testImplementation("org.assertj:assertj-core:3.16.1")
+    // test libs
+    testImplementation(platform("org.testcontainers:testcontainers-bom:$testContainersVersion"))
+    testImplementation("org.testcontainers:testcontainers:$testContainersVersion")
+    testImplementation("org.testcontainers:junit-jupiter:$testContainersVersion")
+    testImplementation("org.assertj:assertj-core:$assertjVersion")
 }
 
 test.classpath += configurations.developmentOnly

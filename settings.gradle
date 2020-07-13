@@ -1,3 +1,2 @@
 include "client"
 include "server"
-rootProject.name="trivia"
