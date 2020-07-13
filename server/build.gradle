@@ -46,7 +46,9 @@ dependencies {
     testImplementation(platform("org.testcontainers:testcontainers-bom:$testContainersVersion"))
     testImplementation("org.testcontainers:testcontainers:$testContainersVersion")
     testImplementation("org.testcontainers:junit-jupiter:$testContainersVersion")
+    testImplementation("org.mockito:mockito-junit-jupiter:$mockitoVersion")
     testImplementation("org.assertj:assertj-core:$assertjVersion")
+    testImplementation("com.jayway.jsonpath:json-path:$jsonPathVersion")
 }
 
 test.classpath += configurations.developmentOnly

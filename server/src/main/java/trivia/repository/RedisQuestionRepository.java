@@ -2,8 +2,9 @@ package trivia.repository;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.lettuce.core.ZAddArgs;
+import io.lettuce.core.RedisClient;
 import io.lettuce.core.api.StatefulRedisConnection;
+import io.micronaut.context.annotation.Requires;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import trivia.domain.Question;
@@ -11,10 +12,9 @@ import trivia.domain.Question;
 import javax.inject.Singleton;
 import java.util.Objects;
 
+@Requires(beans = RedisClient.class)
 @Singleton
 public class RedisQuestionRepository implements QuestionRepository {
-
-    static final ZAddArgs ARGS = ZAddArgs.Builder.ch();
 
     private final StatefulRedisConnection<String,String> connection;
     private final ObjectMapper mapper;

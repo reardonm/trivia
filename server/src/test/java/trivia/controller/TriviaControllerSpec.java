@@ -1,18 +1,27 @@
 package trivia.controller;
 
+import com.jayway.jsonpath.JsonPath;
+import com.jayway.jsonpath.ReadContext;
 import io.micronaut.http.HttpRequest;
+import io.micronaut.http.MediaType;
 import io.micronaut.http.client.HttpClient;
 import io.micronaut.http.client.annotation.Client;
 import io.micronaut.runtime.server.EmbeddedServer;
 import io.micronaut.test.annotation.MicronautTest;
-import org.junit.jupiter.api.BeforeEach;
+import io.micronaut.test.annotation.MockBean;
 import org.junit.jupiter.api.Test;
+import reactor.core.publisher.Flux;
+import trivia.service.DefaultQuestionService;
+import trivia.service.QuestionService;
 
 import javax.inject.Inject;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import java.util.List;
 
-@MicronautTest
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.*;
+
+@MicronautTest(packages="trivia.controller")
 class TrivaControllerSpec {
 
     @Inject
@@ -22,14 +31,25 @@ class TrivaControllerSpec {
     @Client("/api")
     HttpClient client;
 
-    @BeforeEach
-    void setUp() {
+    @Inject
+    QuestionService questionService;
+
+    @MockBean(DefaultQuestionService.class)
+    QuestionService questionService() {
+        return mock(QuestionService.class);
     }
 
     @Test
-    void landingPage() {
-        String response = client.toBlocking().retrieve(HttpRequest.GET("/"));
-        assertThat(response).isNotBlank();
-    }
+    void get_categories() {
+        var cats = new String[]{"Math", "Science", "Sports", "Movies"};
+        when(questionService.listCategories()).thenReturn(Flux.fromArray(cats));
 
+        var response = client.toBlocking().exchange(HttpRequest.GET("/categories"), String.class);
+        assertThat(response.getStatus().getCode()).isEqualTo(200);
+        assertThat(response.getContentType()).contains(MediaType.APPLICATION_JSON_TYPE);
+        ReadContext ctx = JsonPath.parse(response.body());
+        List<String> categories = ctx.read("$.categories");
+
+        assertThat(categories).containsExactly(cats);
+    }
 }
