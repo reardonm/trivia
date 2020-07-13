@@ -1,20 +1,22 @@
 package trivia;
 
 import io.micronaut.runtime.EmbeddedApplication;
-import io.micronaut.test.annotation.MicronautTest;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import trivia.repository.QuestionRepository;
 
 import javax.inject.Inject;
 
-@MicronautTest
-public class TriviaTest {
+public class TriviaTest extends IntegerationTestSupport {
 
     @Inject
     EmbeddedApplication application;
 
+    @Inject
+    QuestionRepository queryRepository;
+
     @Test
-    void testItWorks() {
+    void testItWorks() throws Exception {
         Assertions.assertTrue(application.isRunning());
     }
 }

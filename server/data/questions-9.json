@@ -1,0 +1,578 @@
+[
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "This field is sometimes known as &ldquo;The Dismal Science.&rdquo;",
+    "correct_answer": "Economics",
+    "incorrect_answers": [
+      "Philosophy",
+      "Politics",
+      "Physics"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "French is an official language in Canada.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which sign of the zodiac is represented by the Crab?",
+    "correct_answer": "Cancer",
+    "incorrect_answers": [
+      "Libra",
+      "Virgo",
+      "Sagittarius"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What does the &quot;G&quot; mean in &quot;G-Man&quot;?",
+    "correct_answer": "Government",
+    "incorrect_answers": [
+      "Going",
+      "Ghost",
+      "Geronimo"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "The vapor produced by e-cigarettes is actually water.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "The words &quot;bungalow&quot; and &quot;shampoo&quot; originate from the languages of which country?",
+    "correct_answer": "India",
+    "incorrect_answers": [
+      "Papua New Guinea",
+      "Ethiopia",
+      "China"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "The sum of all the numbers on a roulette wheel is 666.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "There are 86400 seconds in a day.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which of the following is not another name for the eggplant?",
+    "correct_answer": "Potimarron",
+    "incorrect_answers": [
+      "Brinjal",
+      "Guinea Squash",
+      "Melongene"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which of the following chemicals are found in eggplant seeds?",
+    "correct_answer": "Nicotine",
+    "incorrect_answers": [
+      "Mescaline",
+      "Cyanide",
+      "Psilocybin"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Red Vines is a brand of what type of candy?",
+    "correct_answer": "Licorice",
+    "incorrect_answers": [
+      "Lollipop",
+      "Chocolate",
+      "Bubblegum"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What was the destination of the missing flight MH370?",
+    "correct_answer": "Beijing",
+    "incorrect_answers": [
+      "Kuala Lumpur",
+      "Singapore",
+      "Tokyo"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which of the following is an existing family in &quot;The Sims&quot;?",
+    "correct_answer": "The Goth Family",
+    "incorrect_answers": [
+      "The Family",
+      "The Simoleon Family",
+      "The Proud Family"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which of these is the name of a Japanese system of alternative medicine, literally meaning &quot;finger pressure&quot;?",
+    "correct_answer": "Shiatsu",
+    "incorrect_answers": [
+      "Ukiyo",
+      "Majime",
+      "Ikigai"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the name given to Indian food cooked over charcoal in a clay oven?",
+    "correct_answer": "Tandoori",
+    "incorrect_answers": [
+      "Biryani",
+      "Pani puri",
+      "Tiki masala"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "The Swedish word &quot;Grunka&quot; means what in English?",
+    "correct_answer": "Thing",
+    "incorrect_answers": [
+      "People",
+      "Place",
+      "Pineapple"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What country saw a world record 315 million voters turn out for elections on May 20, 1991?",
+    "correct_answer": "India",
+    "incorrect_answers": [
+      "United States of America",
+      "Soviet Union",
+      "Poland"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "The term &quot;Spam&quot; came before the food product &quot;Spam&quot;.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "Kissing someone for one minute burns about 2 calories.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the last letter of the Greek alphabet?",
+    "correct_answer": "Omega",
+    "incorrect_answers": [
+      "Mu",
+      "Epsilon",
+      "Kappa"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "Adolf Hitler was born in Australia. ",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "The Lego Group was founded in 1932.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which one of these Swedish companies was founded in 1943?",
+    "correct_answer": "IKEA",
+    "incorrect_answers": [
+      "H &amp; M",
+      "Lindex",
+      "Clas Ohlson"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In what year was McDonald&#039;s founded?",
+    "correct_answer": "1955",
+    "incorrect_answers": [
+      "1964",
+      "1951",
+      "1947"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which of the General Mills Corporation&#039;s monster cereals was the last to be released in the 1970&#039;s?",
+    "correct_answer": "Fruit Brute",
+    "incorrect_answers": [
+      "Count Chocula",
+      "Franken Berry",
+      "Boo-Berry"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What was Mountain Dew&#039;s original slogan?",
+    "correct_answer": "Yahoo! Mountain Dew... It&#039;ll tickle your innards!",
+    "incorrect_answers": [
+      "Give Me A Dew",
+      "Do The Dew",
+      "Get&#039; that barefoot feelin&#039; drinkin&#039; Mountain Dew"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "How tall is the Burj Khalifa?",
+    "correct_answer": "2,722 ft",
+    "incorrect_answers": [
+      "2,717 ft",
+      "2,546 ft",
+      "3,024 ft"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the Portuguese word for &quot;Brazil&quot;?",
+    "correct_answer": "Brasil",
+    "incorrect_answers": [
+      "Brazil",
+      "Brasilia",
+      "Bras&iacute;l"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which of the following card games revolves around numbers and basic math?",
+    "correct_answer": "Uno",
+    "incorrect_answers": [
+      "Go Fish",
+      "Twister",
+      "Munchkin"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Where does water from Poland Spring water bottles come from?",
+    "correct_answer": "Maine, United States",
+    "incorrect_answers": [
+      "Hesse, Germany",
+      "Masovia, Poland",
+      "Bavaria, Poland"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "According to the 2014-2015 Australian Bureau of Statistics, what percentage of Australians were born overseas?",
+    "correct_answer": "28%",
+    "incorrect_answers": [
+      "13%",
+      "20%",
+      "7%"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "boolean",
+    "difficulty": "hard",
+    "question": "Spoon theory is a theory, utilizing &quot;Spoons&quot; as a metaphor for energy they can use in a day.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Earl Grey tea is black tea flavoured with what?",
+    "correct_answer": "Bergamot oil",
+    "incorrect_answers": [
+      "Lavender",
+      "Vanilla",
+      "Honey"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "If someone said &quot;you are olid&quot;, what would they mean?",
+    "correct_answer": "You smell extremely unpleasant.",
+    "incorrect_answers": [
+      "You are out of shape/weak.",
+      "Your appearance is repulsive.",
+      "You are incomprehensible/an idiot."
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Whose greyscale face is on the kappa emoticon on Twitch?",
+    "correct_answer": "Josh DeSeno",
+    "incorrect_answers": [
+      "Justin DeSeno",
+      "John DeSeno",
+      "Jimmy DeSeno"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Named after the mallow flower, mauve is a shade of what?",
+    "correct_answer": "Purple",
+    "incorrect_answers": [
+      "Red",
+      "Brown",
+      "Pink"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Originally another word for poppy, coquelicot is a shade of what?",
+    "correct_answer": "Red",
+    "incorrect_answers": [
+      "Green",
+      "Blue",
+      "Pink"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which candy is NOT made by Mars?",
+    "correct_answer": "Almond Joy",
+    "incorrect_answers": [
+      "M&amp;M&#039;s",
+      "Twix",
+      "Snickers"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Where is Apple Inc. headquartered?",
+    "correct_answer": "Cupertino, California",
+    "incorrect_answers": [
+      "Redwood City, California",
+      "Redmond, Washington",
+      "Santa Monica, CA"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the star sign of someone born on Valentines day?",
+    "correct_answer": "Aquarius",
+    "incorrect_answers": [
+      "Pisces",
+      "Capricorn",
+      "Scorpio"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "Francis Bacon died from a fatal case of pneumonia while he was attempting to preserve meat by stuffing a chicken with snow.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which American manufactured submachine gun was informally known by the American soldiers that used it as &quot;Grease Gun&quot;?",
+    "correct_answer": "M3",
+    "incorrect_answers": [
+      "Colt 9mm",
+      "Thompson",
+      "MAC-10"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Located in Chile, El Teniente is the world&#039;s largest underground mine for what metal?",
+    "correct_answer": "Copper",
+    "incorrect_answers": [
+      "Iron",
+      "Nickel",
+      "Silver"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "The commercial UK channel ITV stands for &quot;International Television&quot;.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the highest number of Michelin stars a restaurant can receive?",
+    "correct_answer": "Three",
+    "incorrect_answers": [
+      "Four",
+      "Five",
+      "Six"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "Vietnam&#039;s national flag is a red star in front of a yellow background.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "How many notes are there on a standard grand piano?",
+    "correct_answer": "88",
+    "incorrect_answers": [
+      "98",
+      "108",
+      "78"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is the name of NASA&rsquo;s most famous space telescope?",
+    "correct_answer": "Hubble Space Telescope",
+    "incorrect_answers": [
+      "Big Eye",
+      "Death Star",
+      "Millenium Falcon"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the full title of the Prime Minister of the UK?",
+    "correct_answer": "First Lord of the Treasury",
+    "incorrect_answers": [
+      "Duke of Cambridge",
+      "Her Majesty&#039;s Loyal Opposition",
+      "Manager of the Crown Estate"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "The word &quot;astasia&quot; means which of the following?",
+    "correct_answer": "The inability to stand up",
+    "incorrect_answers": [
+      "The inability to make decisions",
+      "The inability to concentrate on anything",
+      "A feverish desire to rip one&#039;s clothes off"
+    ]
+  }
+]

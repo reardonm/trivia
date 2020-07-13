@@ -1,0 +1,586 @@
+[
+  {
+    "category": "Science: Mathematics",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In the hexadecimal system, what number comes after 9?",
+    "correct_answer": "The Letter A",
+    "incorrect_answers": [
+      "10",
+      "The Number 0",
+      "16"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is the most common surname Wales?",
+    "correct_answer": "Jones",
+    "incorrect_answers": [
+      "Williams",
+      "Davies",
+      "Evans"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What does the letter &#039;S&#039; stand for in &#039;NASA&#039;?",
+    "correct_answer": "Space",
+    "incorrect_answers": [
+      "Science",
+      "Society",
+      "Star"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In the Super Mario Bros. Series, what is Yoshi&#039;s scientific name?",
+    "correct_answer": "T. Yoshisaur Munchakoopas",
+    "incorrect_answers": [
+      "Yoshi",
+      "T. Yoshisotop Munchakoopas",
+      "Yossy"
+    ]
+  },
+  {
+    "category": "Geography",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "The Republic of Malta is the smallest microstate worldwide.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "Gumbo is a stew that originated in Louisiana.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "Matt Damon played an astronaut stranded on an extraterrestrial planet in both of the movies Interstellar and The Martian.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Blinky, Pinky, Inky and Clyde are characters from which classic video game?",
+    "correct_answer": "Pac-Man",
+    "incorrect_answers": [
+      "Gauntlet",
+      "Space Invaders",
+      "Street Fighter"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What was Dorothy&#039;s surname in &#039;The Wizard Of Oz&#039;?",
+    "correct_answer": "Gale",
+    "incorrect_answers": [
+      "Perkins",
+      "Day",
+      "Parker"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In the game &quot;Undertale&quot;, who was Mettaton&#039;s creator?",
+    "correct_answer": "Alphys",
+    "incorrect_answers": [
+      "Undyne",
+      "Sans",
+      "Asgore"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "The vapor produced by e-cigarettes is actually water.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which song in rapper Kanye West&#039;s album &quot;The Life of Pablo&quot; features Rihanna?",
+    "correct_answer": "Famous",
+    "incorrect_answers": [
+      "Wolves",
+      "Ultralight Beam",
+      "Highlights"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In what year was &quot;Metal Gear Solid&quot; released in North America?",
+    "correct_answer": "1998",
+    "incorrect_answers": [
+      "1987",
+      "2001",
+      "2004"
+    ]
+  },
+  {
+    "category": "Geography",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Gibraltar, located just south of the Iberian peninsula, is a territory of which West Europe country?",
+    "correct_answer": "United Kingdom",
+    "incorrect_answers": [
+      "Spain",
+      "Portugal",
+      "France"
+    ]
+  },
+  {
+    "category": "Science: Computers",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What does the acronym CDN stand for in terms of networking?",
+    "correct_answer": "Content Delivery Network",
+    "incorrect_answers": [
+      "Content Distribution Network",
+      "Computational Data Network",
+      "Compressed Data Network"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What&#039;s the most common time signature for rock songs?",
+    "correct_answer": "4/4",
+    "incorrect_answers": [
+      "1/2",
+      "8/12",
+      "2/4"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which of these is the name of a Japanese system of alternative medicine, literally meaning &quot;finger pressure&quot;?",
+    "correct_answer": "Shiatsu",
+    "incorrect_answers": [
+      "Ukiyo",
+      "Majime",
+      "Ikigai"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Johnny Cash did a cover of this song written by lead singer of Nine Inch Nails, Trent Reznor.",
+    "correct_answer": "Hurt",
+    "incorrect_answers": [
+      "Closer",
+      "A Warm Place",
+      "Big Man with a Gun"
+    ]
+  },
+  {
+    "category": "Entertainment: Books",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "The novel &quot;Jane Eyre&quot; was written by what author? ",
+    "correct_answer": "Charlotte Bront&euml;",
+    "incorrect_answers": [
+      "Emily Bront&euml;",
+      "Jane Austen",
+      "Louisa May Alcott"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which company did Bethesda purchase the Fallout Series from?",
+    "correct_answer": "Interplay Entertainment ",
+    "incorrect_answers": [
+      "Capcom",
+      "Blizzard Entertainment",
+      "Nintendo"
+    ]
+  },
+  {
+    "category": "Entertainment: Board Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In standard Monopoly, what&#039;s the rent if you land on Park Place with no houses?",
+    "correct_answer": "$35",
+    "incorrect_answers": [
+      "$30",
+      "$50",
+      "$45"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which song in Drake&#039;s &quot;Views&quot; features Future?",
+    "correct_answer": "Grammys",
+    "incorrect_answers": [
+      "Too Good",
+      "Faithful",
+      "Pop Style"
+    ]
+  },
+  {
+    "category": "Science: Mathematics",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "E = MC3",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "Entertainment: Television",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In Star Trek, what is the name of Spock&#039;s father?",
+    "correct_answer": "Sarek",
+    "incorrect_answers": [
+      "Tuvok",
+      "T&#039;Pal",
+      "Surak"
+    ]
+  },
+  {
+    "category": "Entertainment: Television",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who was the winner of the 2016 WWE Royal Rumble?",
+    "correct_answer": "Triple H",
+    "incorrect_answers": [
+      "Roman Reigns",
+      "AJ Styles",
+      "Dean Ambrose"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which team won the &quot;Tom Clancy&#039;s Rainbow Six Siege&quot; Invitational Event February 2017 in the PC Category?",
+    "correct_answer": "Continuum",
+    "incorrect_answers": [
+      "GIFU",
+      "Santos Dexterity",
+      "eRa Eternity"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which game in the &quot;Dark Souls&quot; series does the player play as the &quot;Ashen One&quot;?",
+    "correct_answer": "Dark Souls III",
+    "incorrect_answers": [
+      "Dark Souls I",
+      "Bloodborne",
+      "Demon Souls"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "&quot;Santa Claus&quot; is a variety of melon.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In &quot;Call Of Duty: Zombies&quot;, what is the name of Samantha Maxis&#039; dog?",
+    "correct_answer": "Fluffy",
+    "incorrect_answers": [
+      "Baxter",
+      "Fido",
+      "Henry"
+    ]
+  },
+  {
+    "category": "Science: Computers",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "Linus Sebastian is the creator of the Linux kernel, which went on to be used in Linux, Android, and Chrome OS.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "Geography",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "The Andaman and Nicobar Islands in South East Asia are controlled by which country?",
+    "correct_answer": "India",
+    "incorrect_answers": [
+      "Vietnam",
+      "Thailand",
+      "Indonesia"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "From which album is the Gorillaz song, &quot;On Melancholy Hill&quot; featured in?",
+    "correct_answer": "Plastic Beach",
+    "incorrect_answers": [
+      "Demon Days",
+      "Humanz",
+      "The Fall"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "Dihydrogen Monoxide was banned due to health risks after being discovered in 1983 inside swimming pools and drinking water.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "Entertainment: Japanese Anime & Manga",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In Ms. Kobayashi&#039;s Dragon Maid, who is Kobayashi&#039;s maid?",
+    "correct_answer": "Tohru",
+    "incorrect_answers": [
+      "Lucoa",
+      "Kanna",
+      "Elma"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who plays &quot;Bruce Wayne&quot; in the 2008 movie &quot;The Dark Knight&quot;?",
+    "correct_answer": "Christian Bale",
+    "incorrect_answers": [
+      "Michael Caine",
+      "Ron Dean",
+      "Heath Ledger"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In &quot;Team Fortress 2&quot;, how much health does a scout have when overhealed?",
+    "correct_answer": "185",
+    "incorrect_answers": [
+      "215",
+      "195",
+      "225"
+    ]
+  },
+  {
+    "category": "Mythology",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "The Maori hold that which island nation was founded by Kupe, who discovered it under a long white cloud?",
+    "correct_answer": "New Zealand",
+    "incorrect_answers": [
+      "Vanuatu",
+      "Fiji",
+      "Hawaii"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In which game did the character &quot;Mario&quot; make his first appearance?",
+    "correct_answer": "Donkey Kong",
+    "incorrect_answers": [
+      "Super Mario Bros.",
+      "Super Mario Land",
+      "Mario Bros."
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In Left 4 Dead, which campaign has the protagonists going through a subway in order to reach a hospital for evacuation?",
+    "correct_answer": "No Mercy",
+    "incorrect_answers": [
+      "Subway Sprint",
+      "Hospital Havoc",
+      "Blood Harvest"
+    ]
+  },
+  {
+    "category": "Entertainment: Japanese Anime & Manga",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which animation studio animated &quot;Psycho Pass&quot;?",
+    "correct_answer": "Production I.G",
+    "incorrect_answers": [
+      "Kyoto Animation",
+      "Shaft",
+      "Trigger"
+    ]
+  },
+  {
+    "category": "Art",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who designed the Chupa Chups logo?",
+    "correct_answer": "Salvador Dali",
+    "incorrect_answers": [
+      "Pablo Picasso",
+      "Andy Warhol",
+      "Vincent van Gogh"
+    ]
+  },
+  {
+    "category": "Entertainment: Books",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In which classic novel is there a character named Homer Simpson?",
+    "correct_answer": "The Day of the Locust",
+    "incorrect_answers": [
+      "Catch-22",
+      "Of Mice and Men",
+      "A Separate Peace"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What is the default name of the Vampire character in &quot;Shining Soul 2&quot;.",
+    "correct_answer": "Bloodstar",
+    "incorrect_answers": [
+      "Sachs",
+      "Dracuul",
+      "Alucard"
+    ]
+  },
+  {
+    "category": "Entertainment: Television",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Who was the winner of &quot;Big Brother&quot; Season 10?",
+    "correct_answer": "Dan Gheesling",
+    "incorrect_answers": [
+      "Bryce Kranyik",
+      "Ryan Sutfin",
+      "Chris Mundorf"
+    ]
+  },
+  {
+    "category": "Animals",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the scientific name of the Common Chimpanzee?",
+    "correct_answer": "Pan troglodytes",
+    "incorrect_answers": [
+      "Gorilla gorilla",
+      "Pan paniscus",
+      "Panthera leo"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Liam Howlett founded which electronic music group in 1990?",
+    "correct_answer": "The Prodigy",
+    "incorrect_answers": [
+      "The Chemical Brothers",
+      "The Crystal Method",
+      "Infected Mushroom"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is Cynophobia the fear of?",
+    "correct_answer": "Dogs",
+    "incorrect_answers": [
+      "Birds",
+      "Flying",
+      "Germs"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who performed the opening theme song for the James Bond 007 movie &quot;Goldfinger&quot;?",
+    "correct_answer": "Shirley Basey",
+    "incorrect_answers": [
+      "Tom Jones",
+      "John Barry",
+      "Sheena Easton"
+    ]
+  },
+  {
+    "category": "Entertainment: Japanese Anime & Manga",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which of these is not a world in the anime &quot;Buddyfight&quot;?",
+    "correct_answer": "Ancient Dragon World",
+    "incorrect_answers": [
+      "Dragon World",
+      "Star Dragon World",
+      "Darkness Dragon World"
+    ]
+  },
+  {
+    "category": "Entertainment: Television",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What actor portrays Hogan &quot;Wash&quot; Washburne in the TV Show Firefly?",
+    "correct_answer": "Alan Tudyk",
+    "incorrect_answers": [
+      "Adam Baldwin",
+      "Nathan Fillion",
+      "Sean Maher"
+    ]
+  }
+]

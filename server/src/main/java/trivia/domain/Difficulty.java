@@ -1,5 +1,5 @@
 package trivia.domain;
 
 public enum Difficulty {
-    Easy
+    easy, medium, hard
 }

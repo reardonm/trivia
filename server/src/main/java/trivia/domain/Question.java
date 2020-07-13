@@ -12,8 +12,6 @@ import java.util.List;
 @Builder
 public class Question {
 
-    private String id;
-
     private String category;
 
     private Difficulty difficulty;

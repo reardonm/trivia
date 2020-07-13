@@ -1,0 +1,590 @@
+[
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which of the following bones is not in the leg?",
+    "correct_answer": "Radius",
+    "incorrect_answers": [
+      "Patella",
+      "Tibia",
+      "Fibula "
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which of the following liquids is least viscous? Assume temperature is 25&deg;C.",
+    "correct_answer": "Acetone",
+    "incorrect_answers": [
+      "Water",
+      "Mercury",
+      "Benzene"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which of these bones is hardest to break?",
+    "correct_answer": "Femur",
+    "incorrect_answers": [
+      "Cranium",
+      "Humerus",
+      "Tibia"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which is the chemical name of H2O?",
+    "correct_answer": "Dihydrogen Monoxide",
+    "incorrect_answers": [
+      "Ammonium chloride",
+      "Anhydrous Sodium Carbonate",
+      "Manganese dioxide"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What name is given to all baby marsupials?",
+    "correct_answer": "Joey",
+    "incorrect_answers": [
+      "Calf",
+      "Pup",
+      "Cub"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "The moons, Miranda, Ariel, Umbriel, Titania and Oberon orbit which planet?",
+    "correct_answer": "Uranus",
+    "incorrect_answers": [
+      "Jupiter",
+      "Venus",
+      "Neptune"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "The humerus, paired radius, and ulna come together to form what joint?",
+    "correct_answer": "Elbow",
+    "incorrect_answers": [
+      "Knee",
+      "Sholder",
+      "Ankle"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "How many planets are in our Solar System?",
+    "correct_answer": "Eight",
+    "incorrect_answers": [
+      "Nine",
+      "Seven",
+      "Ten"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which of these stars is the largest?",
+    "correct_answer": "UY Scuti",
+    "incorrect_answers": [
+      "VY Canis Majoris",
+      "Betelgeuse",
+      "RW Cephei"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "How many degrees Fahrenheit is 100 degrees Celsius? ",
+    "correct_answer": "212",
+    "incorrect_answers": [
+      "326",
+      "100",
+      "451"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "To the nearest minute, how long does it take for light to travel from the Sun to the Earth?",
+    "correct_answer": "8 Minutes",
+    "incorrect_answers": [
+      "6 Minutes",
+      "2 Minutes",
+      "12 Minutes"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "How many planets make up our Solar System?",
+    "correct_answer": "8",
+    "incorrect_answers": [
+      "7",
+      "9",
+      "6"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Au on the Periodic Table refers to which element?",
+    "correct_answer": "Gold",
+    "incorrect_answers": [
+      "Silver",
+      "Oxygen",
+      "Nickel"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "All of the following human genetic haplogroup names are shared between Y-chromosome and mitochondrial DNA haplogroups EXCEPT:",
+    "correct_answer": "Haplogroup U",
+    "incorrect_answers": [
+      "Haplogroup L",
+      "Haplogroup T",
+      "Haplogroup J"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which of the following blood vessels carries deoxygenated blood?",
+    "correct_answer": "Pulmonary Artery",
+    "incorrect_answers": [
+      "Pulmonary Vein",
+      "Aorta",
+      "Coronary Artery"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "Shrimp can swim backwards.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which psychological term refers to the stress of holding contrasting beliefs?",
+    "correct_answer": "Cognitive Dissonance",
+    "incorrect_answers": [
+      "Flip-Flop Syndrome",
+      "Split-Brain",
+      "Blind Sight"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "The &quot;Tibia&quot; is found in which part of the body?",
+    "correct_answer": "Leg",
+    "incorrect_answers": [
+      "Arm",
+      "Hand",
+      "Head"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "If you planted the seeds of Quercus robur what would grow?",
+    "correct_answer": "Trees",
+    "incorrect_answers": [
+      "Flowers",
+      "Vegtables",
+      "Grains"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who developed the first successful polio vaccine in the 1950s?",
+    "correct_answer": "Jonas Salk",
+    "incorrect_answers": [
+      "John F. Enders",
+      "Thomas Weller",
+      "Frederick Robbins"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "How many bones are in the human body?",
+    "correct_answer": "206",
+    "incorrect_answers": [
+      "203",
+      "209",
+      "200"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which is not a type of neuron?",
+    "correct_answer": "Perceptual Neuron",
+    "incorrect_answers": [
+      "Sensory Neuron",
+      "Motor Neuron",
+      "Interneuron"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "The medical condition osteoporosis affects which part of the body?",
+    "correct_answer": "Bones",
+    "incorrect_answers": [
+      "Skin",
+      "Brain",
+      "Heart"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which of the following is NOT a real element?",
+    "correct_answer": "Vitrainium",
+    "incorrect_answers": [
+      "Praseodymium",
+      "Hassium",
+      "Lutetium"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "Scientists accidentally killed the once known world&#039;s oldest living creature, a mollusc, known to be aged as 507 years old.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What term is best associated with Sigmund Freud?",
+    "correct_answer": "Psychoanalysis",
+    "incorrect_answers": [
+      "Cognitive-Behavioral Therapy",
+      "Theory of Gravity",
+      "Dialectical Behavior Therapy"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "After which Danish city is the 72th element on the periodic table named?",
+    "correct_answer": "Copenhagen",
+    "incorrect_answers": [
+      "Odense",
+      "Herning",
+      "Skagen"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "Centripedal force is an apparent force that acts outward on a body moving around a center, arising from the body&#039;s inertia.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which of these is a type of stretch/deep tendon reflex?",
+    "correct_answer": "Ankle jerk reflex",
+    "incorrect_answers": [
+      "Gag reflex",
+      "Pupillary light reflex",
+      "Scratch reflex"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "The asteroid belt is located between which two planets?",
+    "correct_answer": "Mars and Jupiter",
+    "incorrect_answers": [
+      "Jupiter and Saturn",
+      "Mercury and Venus",
+      "Earth and Mars"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "A comet&#039;s gaseous envelope (which creates the tail) is called what?",
+    "correct_answer": "The coma",
+    "incorrect_answers": [
+      "The wake",
+      "The backwash",
+      "The ablative"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In Chemistry, how many isomers does Butanol (C4H9OH) have?",
+    "correct_answer": "4",
+    "incorrect_answers": [
+      "3",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which of these elements on the Periodic Table is a Noble Gas?",
+    "correct_answer": "Neon",
+    "incorrect_answers": [
+      "Potassium",
+      "Iodine",
+      "Colbalt"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who made the discovery of X-rays?",
+    "correct_answer": "Wilhelm Conrad R&ouml;ntgen",
+    "incorrect_answers": [
+      "Thomas Alva Edison",
+      "James Watt",
+      "Albert Einstein"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "In the periodic table, Potassium&#039;s symbol is the letter K.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "71% of the Earth&#039;s surface is made up of",
+    "correct_answer": "Water",
+    "incorrect_answers": [
+      "Deserts",
+      "Continents",
+      "Forests"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "boolean",
+    "difficulty": "hard",
+    "question": "The chemical element Lithium is named after the country of Lithuania.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What does the term &quot;isolation&quot; refer to in microbiology?",
+    "correct_answer": "The separation of a strain from a natural, mixed population of living microbes",
+    "incorrect_answers": [
+      "A lack of nutrition in microenviroments",
+      "The nitrogen level in soil",
+      "Testing effects of certain microorganisms in an isolated enviroments, such as caves"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In Psychology, which need appears highest in the &quot;Maslow&#039;s hierarchy of needs&quot; pyramid?",
+    "correct_answer": "Esteem",
+    "incorrect_answers": [
+      "Love",
+      "Safety",
+      "Physiological"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What animal takes part in Schr&ouml;dinger&#039;s most famous thought experiment?",
+    "correct_answer": "Cat",
+    "incorrect_answers": [
+      "Dog",
+      "Bat",
+      "Butterfly"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "Psychology is the science of behavior and mind.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the largest living organism currently known to man?",
+    "correct_answer": "Honey Fungus",
+    "incorrect_answers": [
+      "Blue Whale",
+      "Redwood Tree",
+      "The Coral Reef"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What is the scientific name for the extinct hominin known as &quot;Lucy&quot;?",
+    "correct_answer": "Australopithecus Afarensis",
+    "incorrect_answers": [
+      "Australopithecus Africanus",
+      "Australopithecus Architeuthis",
+      "Australopithecus Antaris"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Coulrophobia is the irrational fear of what?",
+    "correct_answer": "Clowns",
+    "incorrect_answers": [
+      "Cemeteries",
+      "Needles",
+      "Tunnels"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the scientific term for &#039;taste&#039;?",
+    "correct_answer": "Gustatory Perception",
+    "incorrect_answers": [
+      "Olfaction",
+      "Somatosensation",
+      "Auditory Perception"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which noble gas has the lowest atomic number?",
+    "correct_answer": "Helium",
+    "incorrect_answers": [
+      "Neon",
+      "Argon",
+      "Krypton"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "An organism described as &quot;heliotropic&quot; has a tendancy to move towards which of these things?",
+    "correct_answer": "Light",
+    "incorrect_answers": [
+      "Water",
+      "Trees",
+      "Pollen"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is the official name of the star located closest to the North Celestial Pole?",
+    "correct_answer": "Polaris",
+    "incorrect_answers": [
+      "Eridanus",
+      "Gamma Cephei",
+      "Iota Cephei"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Where did the Great Storm of 1987 make landfall at, first?",
+    "correct_answer": "Cornwall",
+    "incorrect_answers": [
+      "Surrey",
+      "Wales",
+      "The Midlands"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Deionized water is water with which of the following removed?",
+    "correct_answer": "Iron",
+    "incorrect_answers": [
+      "Oxygen",
+      "Hydrogen",
+      "Uncharged atoms"
+    ]
+  }
+]

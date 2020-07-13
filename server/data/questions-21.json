@@ -1,0 +1,590 @@
+[
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which of the following sports is not part of the triathlon?",
+    "correct_answer": "Horse-Riding",
+    "incorrect_answers": [
+      "Cycling",
+      "Swimming",
+      "Running"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "How many times did Martina Navratilova win the Wimbledon Singles Championship?",
+    "correct_answer": "Nine",
+    "incorrect_answers": [
+      "Ten",
+      "Seven",
+      "Eight"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "With which team did Michael Schumacher make his Formula One debut at the 1991 Belgian Grand Prix?",
+    "correct_answer": "Jordan",
+    "incorrect_answers": [
+      "Benetton",
+      "Ferrari",
+      "Mercedes"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What tool lends it&#039;s name to a last-stone advantage in an end in Curling?",
+    "correct_answer": "Hammer",
+    "incorrect_answers": [
+      "Wrench",
+      "Drill",
+      "Screwdriver"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who was the British professional wrestler Shirley Crabtree better known as?",
+    "correct_answer": "Big Daddy",
+    "incorrect_answers": [
+      "Giant Haystacks",
+      "Kendo Nagasaki",
+      "Masambula"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the nickname of Northampton town&#039;s rugby union club?",
+    "correct_answer": "Saints",
+    "incorrect_answers": [
+      "Harlequins",
+      "Saracens",
+      "Wasps"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "How many soccer players should be on the field at the same time?",
+    "correct_answer": "22",
+    "incorrect_answers": [
+      "20",
+      "24",
+      "26"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In a game of snooker, what colour ball is worth 3 points?",
+    "correct_answer": "Green",
+    "incorrect_answers": [
+      "Yellow",
+      "Brown",
+      "Blue"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "With which doubles partner did John McEnroe have most success?",
+    "correct_answer": "Peter Fleming",
+    "incorrect_answers": [
+      "Mark Woodforde",
+      "Michael Stich",
+      "Mary Carillo"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "Soccer player Cristiano Ronaldo opened a museum dedicated to himself.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "Peyton Manning retired after winning Super Bowl XLIX.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which driver has been the Formula 1 world champion for a record 7 times?",
+    "correct_answer": "Michael Schumacher",
+    "incorrect_answers": [
+      "Ayrton Senna",
+      "Fernando Alonso",
+      "Jim Clark"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which team was the 2014-2015 NBA Champions?",
+    "correct_answer": "Golden State Warriors",
+    "incorrect_answers": [
+      "Cleveland Cavaliers",
+      "Houston Rockets",
+      "Atlanta Hawks"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Josh Mansour is part of what NRL team?",
+    "correct_answer": "Penrith Panthers",
+    "incorrect_answers": [
+      "Melbourne Storm",
+      "Sydney Roosters",
+      "North Queensland Cowboys"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which car manufacturer won the 2016 24 Hours of Le Mans?",
+    "correct_answer": "Porsche",
+    "incorrect_answers": [
+      "Toyota",
+      "Audi",
+      "Ferrari"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "The Olympics tennis court is a giant green screen.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which male player won the gold medal of table tennis singles in 2016 Olympics Games?",
+    "correct_answer": "Ma Long (China)",
+    "incorrect_answers": [
+      "Zhang Jike (China)",
+      "Jun Mizutani (Japan)",
+      "Vladimir Samsonov (Belarus)"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which female player won the gold medal of table tennis singles in 2016 Olympics Games?",
+    "correct_answer": "DING Ning (China)",
+    "incorrect_answers": [
+      "LI Xiaoxia (China)",
+      "Ai FUKUHARA (Japan)",
+      "Song KIM (North Korea)"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which soccer team won the Copa Am&eacute;rica 2015 Championship ?",
+    "correct_answer": "Chile",
+    "incorrect_answers": [
+      "Argentina",
+      "Brazil",
+      "Paraguay"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which team won 2014 FIFA World Cup in Brazil?",
+    "correct_answer": "Germany",
+    "incorrect_answers": [
+      "Argentina",
+      "Brazil",
+      "Netherlands"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "Formula E is an auto racing series that uses hybrid electric race cars.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In Baseball, how many times does the ball have to be pitched outside of the strike zone before the batter is walked?",
+    "correct_answer": "4",
+    "incorrect_answers": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In 2016, who won the Formula 1 World Constructor&#039;s Championship for the third time in a row?",
+    "correct_answer": "Mercedes-AMG Petronas",
+    "incorrect_answers": [
+      "Scuderia Ferrari",
+      "McLaren Honda",
+      "Red Bull Racing Renault"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What team won the 2016 MLS Cup?",
+    "correct_answer": "Seattle Sounders",
+    "incorrect_answers": [
+      "Colorado Rapids",
+      "Toronto FC",
+      "Montreal Impact"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In Formula 1, the Virtual Safety Car was introduced following the fatal crash of which driver?",
+    "correct_answer": "Jules Bianchi",
+    "incorrect_answers": [
+      "Ayrton Senna",
+      "Ronald Ratzenberger",
+      "Gilles Villeneuve"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which of the following Grand Slam tennis tournaments occurs LAST?",
+    "correct_answer": "US Open",
+    "incorrect_answers": [
+      "French Open",
+      "Wimbledon",
+      "Australian Open"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "In association football, or soccer, a corner kick is when the game restarts after someone scores a goal.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What year did the New Orleans Saints win the Super Bowl?",
+    "correct_answer": "2010",
+    "incorrect_answers": [
+      "2008",
+      "2009",
+      "2011"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the exact length of one non-curved part in Lane 1 of an Olympic Track?",
+    "correct_answer": "84.39m",
+    "incorrect_answers": [
+      "100m",
+      "100yd",
+      "109.36yd"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "This Canadian television sportscaster is known for his &quot;Hockey Night in Canada&quot; role, a commentary show during hockey games.",
+    "correct_answer": "Don Cherry",
+    "incorrect_answers": [
+      "Don McKellar",
+      "Don Taylor ",
+      "Donald Sutherland"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What is the full name of the footballer &quot;Cristiano Ronaldo&quot;?",
+    "correct_answer": "Cristiano Ronaldo dos Santos Aveiro",
+    "incorrect_answers": [
+      "Cristiano Ronaldo los Santos Diego",
+      "Cristiano Armando Diego Ronaldo",
+      "Cristiano Luis Armando Ronaldo"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who won the &quot;Champions League&quot; in 1999?",
+    "correct_answer": "Manchester United",
+    "incorrect_answers": [
+      "Barcelona",
+      "Bayern Munich",
+      "Liverpool"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who won the 2015 College Football Playoff (CFP) National Championship? ",
+    "correct_answer": "Ohio State Buckeyes",
+    "incorrect_answers": [
+      "Alabama Crimson Tide",
+      "Clemson Tigers",
+      "Wisconsin Badgers"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What year was hockey legend Wayne Gretzky born?",
+    "correct_answer": "1961",
+    "incorrect_answers": [
+      "1965",
+      "1959",
+      "1963"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which boxer was banned for taking a bite out of Evander Holyfield&#039;s ear in 1997?",
+    "correct_answer": "Mike Tyson",
+    "incorrect_answers": [
+      "Roy Jones Jr.",
+      "Evander Holyfield",
+      "Lennox Lewis"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In what sport does Fanny Chmelar compete for Germany?",
+    "correct_answer": "Skiing",
+    "incorrect_answers": [
+      "Swimming",
+      "Showjumping",
+      "Gymnastics"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is the most common type of pitch thrown by pitchers in baseball?",
+    "correct_answer": "Fastball",
+    "incorrect_answers": [
+      "Slowball",
+      "Screwball",
+      "Palmball"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In bowling, what is the term used for getting three consecutive strikes?",
+    "correct_answer": "Turkey",
+    "incorrect_answers": [
+      "Flamingo",
+      "Birdie",
+      "Eagle"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which city features all of their professional sports teams&#039; jersey&#039;s with the same color scheme?",
+    "correct_answer": "Pittsburgh",
+    "incorrect_answers": [
+      "New York",
+      "Seattle",
+      "Tampa Bay"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is the name of Manchester United&#039;s home stadium?",
+    "correct_answer": "Old Trafford",
+    "incorrect_answers": [
+      "Anfield",
+      "City of Manchester Stadium",
+      "St James Park"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which player &quot;kung-fu kicked&quot; a Crystal Palace fan in January 1995?",
+    "correct_answer": "Eric Cantona",
+    "incorrect_answers": [
+      "David Seamen",
+      "Ashley Cole",
+      "Mark Hughes"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Who did Steven Gerrard win the Champions League with?",
+    "correct_answer": "Liverpool",
+    "incorrect_answers": [
+      "Real Madrid",
+      "Chelsea",
+      "Man City"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "The Los Angeles Dodgers were originally from what U.S. city?",
+    "correct_answer": "Brooklyn",
+    "incorrect_answers": [
+      "Las Vegas",
+      "Boston",
+      "Seattle"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which professional wrestler fell from the rafters to his death during a live Pay-Per-View event in 1999?",
+    "correct_answer": "Owen Hart",
+    "incorrect_answers": [
+      "Chris Benoit",
+      "Lex Luger",
+      "Al Snow"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "&quot;Stadium of Light&quot; is the home stadium for which soccer team?",
+    "correct_answer": "Sunderland FC",
+    "incorrect_answers": [
+      "Barcelona FC",
+      "Paris Saints-Germain",
+      "Manchester United"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "There are a total of 20 races in Formula One 2016 season.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which year did Jenson Button won his first ever Formula One World Drivers&#039; Championship?",
+    "correct_answer": "2009",
+    "incorrect_answers": [
+      "2010",
+      "2007",
+      "2006"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who was the topscorer for England national football team?",
+    "correct_answer": "Wayne Rooney",
+    "incorrect_answers": [
+      "David Beckham",
+      "Steven Gerrard",
+      "Michael Owen"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Who won the UEFA Champions League in 2016?",
+    "correct_answer": "Real Madrid C.F.",
+    "incorrect_answers": [
+      "FC Bayern Munich",
+      "Atletico Madrid",
+      "Manchester City F.C."
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who won the 2011 Stanley Cup?",
+    "correct_answer": "Boston Bruins",
+    "incorrect_answers": [
+      "Montreal Canadiens",
+      "New York Rangers",
+      "Toronto Maple Leafs"
+    ]
+  }
+]

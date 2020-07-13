@@ -1,0 +1,584 @@
+[
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which of the following is not the name of a &quot;Bond Girl&quot;? ",
+    "correct_answer": "Vanessa Kensington",
+    "incorrect_answers": [
+      "Pam Bouvier",
+      "Mary Goodnight",
+      "Wai Lin"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which 1958 movie starred Kirk Douglas and Tony Curtis as half-brothers Einar and Eric?",
+    "correct_answer": "The Vikings ",
+    "incorrect_answers": [
+      "The Long Ships",
+      "Prince Valiant",
+      "Spartacus"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which retired American football quarterback played himself in &#039;Ace Ventura: Pet Detective&#039; and &#039;Little Nicky&#039;?",
+    "correct_answer": "Dan Marino",
+    "incorrect_answers": [
+      "John Elway",
+      "Tom Brady",
+      "Joe Montana"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In which 1973 film does Yul Brynner play a robotic cowboy who malfunctions and goes on a killing\tspree?",
+    "correct_answer": "Westworld",
+    "incorrect_answers": [
+      "Runaway",
+      "Android",
+      "The Terminators"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who voiced the character Draco in the 1996 movie &#039;DragonHeart&#039;?",
+    "correct_answer": "Sean Connery",
+    "incorrect_answers": [
+      "Dennis Quaid",
+      "Pete Postlethwaite",
+      "Brian Thompson"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In the 1984 movie &quot;The Terminator&quot;, what model number is the Terminator portrayed by Arnold Schwarzenegger?",
+    "correct_answer": "T-800",
+    "incorrect_answers": [
+      "I-950",
+      "T-888",
+      "T-1000"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "The movie &quot;The Nightmare before Christmas&quot; was all done with physical objects.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "There aren&#039;t any live-action clones in &quot;Star Wars: Episode III - Revenge of the Sith&quot;.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the name of James Dean&#039;s character in the 1955 movie &quot;Rebel Without a Cause&quot;?",
+    "correct_answer": "Jim Stark",
+    "incorrect_answers": [
+      "Ned Stark",
+      "Jim Kane",
+      "Frank Stark"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In which African country was the 2006 film &#039;Blood Diamond&#039; mostly set in?",
+    "correct_answer": "Sierra Leone",
+    "incorrect_answers": [
+      "Liberia",
+      "Burkina Faso",
+      "Central African Republic"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "The 2010 film &quot;The Social Network&quot; is a biographical drama film about MySpace founder Tom Anderson.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What is the name of the assassin in the first &quot;Hellboy&quot; movie?",
+    "correct_answer": "Karl Ruprecht Kroenen",
+    "incorrect_answers": [
+      "Klaus Werner von Krupt",
+      "Grigori Efimovich Rasputin",
+      "Ilsa Haupstein"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which of these movies did Jeff Bridges not star in?",
+    "correct_answer": "The Hateful Eight",
+    "incorrect_answers": [
+      "Tron: Legacy",
+      "The Giver",
+      "True Grit"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In the 1994 movie &quot;Speed&quot;, what is the minimum speed the bus must go to prevent to bomb from exploding?",
+    "correct_answer": "50 mph",
+    "incorrect_answers": [
+      "60 mph",
+      "40 mph",
+      "70 mph"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is the oldest Disney film?",
+    "correct_answer": "Snow White and the Seven Dwarfs",
+    "incorrect_answers": [
+      "Pinocchio",
+      "Dumbo",
+      "Fantasia"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which one of these films are shot entirely in one-take?",
+    "correct_answer": "Russian Ark",
+    "incorrect_answers": [
+      "Good Will Hunting",
+      "Birdman",
+      "Schindler&#039;s List"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which one of these action movies are shot entirely in one take?",
+    "correct_answer": "Victoria",
+    "incorrect_answers": [
+      "Ip Man 2",
+      "The Bourne Legacy",
+      "L&eacute;on: The Professional"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who played Sgt. Gordon Elias in &#039;Platoon&#039; (1986)?",
+    "correct_answer": "Willem Dafoe",
+    "incorrect_answers": [
+      "Charlie Sheen",
+      "Matt Damon",
+      "Johnny Depp"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Who in Pulp Fiction says &quot;No, they got the metric system there, they wouldn&#039;t know what the fuck a Quarter Pounder is.&quot;",
+    "correct_answer": "Vincent Vega",
+    "incorrect_answers": [
+      "Jules Winnfield",
+      "Jimmie Dimmick",
+      "Butch Coolidge"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which actor plays Obi-Wan Kenobi in Star Wars Episodes I-lll?",
+    "correct_answer": "Ewan McGregor",
+    "incorrect_answers": [
+      "Alec Guinness",
+      "Hayden Christensen",
+      "Liam Neeson"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "In the original Star Wars trilogy, Alec Guinness provided the voice for Darth Vader.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "boolean",
+    "difficulty": "hard",
+    "question": "&quot;Cube&quot;, &quot;Cube 2: Hypercube&quot; and &quot;Cube Zero&quot; were directed by the same person.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who voices the main character Blu in the 2011 animated film &quot;Rio&quot;?",
+    "correct_answer": "Jesse Eisenberg",
+    "incorrect_answers": [
+      "Michael Cera",
+      "Jonah Hill",
+      "Zach Galifianakis"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In the movie &quot;Spaceballs&quot;, what are the Spaceballs attempting to steal from Planet Druidia?",
+    "correct_answer": "Air",
+    "incorrect_answers": [
+      "The Schwartz",
+      "Princess Lonestar",
+      "Meatballs"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "In the movie The Revenant, DiCaprio&#039;s character hunts down the killer of his son.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "Brandon Routh plays the titular character in the movie &quot;John Wick&quot;.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who voiced Metalbeard in &quot;The Lego Movie&quot;?",
+    "correct_answer": "Nick Offerman",
+    "incorrect_answers": [
+      "Liam Neeson",
+      "Morgan Freeman",
+      "Will Arnet"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the correct spelling of the protagonist of the book in The NeverEnding Story (1984)?",
+    "correct_answer": "Atreyu",
+    "incorrect_answers": [
+      "Atrayu",
+      "Atraiyu",
+      "Atraeyu"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In the 2012 film, &quot;The Lorax&quot;, who is the antagonist?",
+    "correct_answer": "Aloysius O&#039;Hare",
+    "incorrect_answers": [
+      "Ted Wiggins",
+      "The Once-Ler",
+      "Grammy Norma"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "At the end of the 2001 film &quot;Rat Race&quot;, whose concert do the contestants crash?",
+    "correct_answer": "Smash Mouth",
+    "incorrect_answers": [
+      "Bowling for Soup",
+      "Sum 41",
+      "Linkin Park"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which famous singer was portrayed by actor Kevin Spacey in the 2004 biographical film &quot;Beyond the Sea&quot;?",
+    "correct_answer": "Bobby Darin",
+    "incorrect_answers": [
+      "Louis Armstrong",
+      "Frank Sinatra",
+      "Dean Martin"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "The 2016 Disney animated film &#039;Moana&#039; is based on which culture?",
+    "correct_answer": "Polynesian",
+    "incorrect_answers": [
+      "Native American",
+      "Japanese",
+      "Nordic"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In the 1995 film &quot;Balto&quot;, who are Steele&#039;s accomplices?",
+    "correct_answer": "Kaltag, Nikki, and Star",
+    "incorrect_answers": [
+      "Dusty, Kirby, and Ralph",
+      "Nuk, Yak, and Sumac",
+      "Jenna, Sylvie, and Dixie"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who is the director of the 1991 film &quot;Silence of the Lambs&quot;?",
+    "correct_answer": "Jonathan Demme",
+    "incorrect_answers": [
+      "Stanley Kubrick",
+      "Frank Darabont",
+      "Michael Bay"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In order to cut costs, what were most of the extras of Mad Max (1979) paid with?",
+    "correct_answer": "Beer",
+    "incorrect_answers": [
+      "Fast food",
+      "Food stamps",
+      "They weren&#039;t paid"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In what year did Clint Eastwood star as Inspector Harry Callahan in the film &quot;Dirty Harry&quot;?",
+    "correct_answer": "1971",
+    "incorrect_answers": [
+      "1975",
+      "1983",
+      "1969"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is the name of the island that &quot;Jurassic Park&quot; is built on?",
+    "correct_answer": "Isla Nublar",
+    "incorrect_answers": [
+      "Isla Sorna",
+      "Isla Muerta",
+      "Isla Pena"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What is the name of the supercomputer located in the control room in &quot;Jurassic Park&quot; (1993)?",
+    "correct_answer": "Thinking Machines CM-5",
+    "incorrect_answers": [
+      "Cray X-MP",
+      "Cray XK7",
+      "IBM Blue Gene/Q"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In &quot;Jurassic World&quot;, which company purchases InGen and creates Jurassic World?",
+    "correct_answer": "Masrani Global Corporation ",
+    "incorrect_answers": [
+      "Biology Synthetics Technologies",
+      "International Genetics Incorporated",
+      "International Genetic Technologies"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who plays &quot;Bruce Wayne&quot; in the 2008 movie &quot;The Dark Knight&quot;?",
+    "correct_answer": "Christian Bale",
+    "incorrect_answers": [
+      "Michael Caine",
+      "Ron Dean",
+      "Heath Ledger"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What is the species of the &quot;Predator&quot; in the 1987 movie &quot;Predator&quot;?",
+    "correct_answer": "Yautja",
+    "incorrect_answers": [
+      "Xenomorph",
+      "Praetorian",
+      "Phocrex"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which former Star Trek actor directed Three Men and a Baby (1987)?",
+    "correct_answer": "Leonard Nimoy",
+    "incorrect_answers": [
+      "William Shatner",
+      "George Takei",
+      "James Doohan"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What character in the Winnie the Pooh films was added by Disney and does not appear in the original books?",
+    "correct_answer": "Gopher",
+    "incorrect_answers": [
+      "Tigger",
+      "Heffalumps",
+      "Rabbit"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In Finding Nemo, what was the name of Nemo&#039;s mom?",
+    "correct_answer": "Coral",
+    "incorrect_answers": [
+      "Sandy",
+      "Pearl",
+      "Shelly"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "&quot;Foodfight!&quot; earned less than $80,000 at box office.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "The movie &quot;Tron&quot; received an Oscar nomination for Best Visual Effects.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which of these Movies was NOT released in 1996?",
+    "correct_answer": "Gladiator",
+    "incorrect_answers": [
+      "Independence Day",
+      "The Rock",
+      "Mission: Impossible"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which 90&#039;s comedy cult classic features cameos appearances from Meat Loaf, Alice Cooper and Chris Farley?",
+    "correct_answer": "Wayne&#039;s World",
+    "incorrect_answers": [
+      "Bill &amp; Ted&#039;s Excellent Adventure",
+      "Dumb and Dumber",
+      "Austin Powers: International Man of Mystery"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which star actor was in &quot;Top Gun&quot;, &quot;Jerry Maguire&quot; and &quot;Born on the Fourth of July&quot;?",
+    "correct_answer": "Tom Cruise",
+    "incorrect_answers": [
+      "Kelly McGillis",
+      "John Travolta",
+      "George Clooney"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who performed the opening theme song for the James Bond 007 movie &quot;Goldfinger&quot;?",
+    "correct_answer": "Shirley Basey",
+    "incorrect_answers": [
+      "Tom Jones",
+      "John Barry",
+      "Sheena Easton"
+    ]
+  }
+]

@@ -2,7 +2,9 @@ package trivia.repository;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.lettuce.core.ZAddArgs;
 import io.lettuce.core.api.StatefulRedisConnection;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import trivia.domain.Question;
 
@@ -11,6 +13,8 @@ import java.util.Objects;
 
 @Singleton
 public class RedisQuestionRepository implements QuestionRepository {
+
+    static final ZAddArgs ARGS = ZAddArgs.Builder.ch();
 
     private final StatefulRedisConnection<String,String> connection;
     private final ObjectMapper mapper;
@@ -21,16 +25,27 @@ public class RedisQuestionRepository implements QuestionRepository {
     }
 
     @Override
-    public Mono<Boolean> save(Question question) {
+    public Mono<Double> save(Question question) {
+        // add question to a sorted set, keyed by the category name
         return Mono.fromSupplier(() -> encode(question))
-            .flatMap(q -> connection.reactive().set(question.getId(), q))
-            .map("OK"::equals);
+            .flatMap(q -> connection.reactive().zaddincr(createKey(question),1.0D, q));
+    }
+
+    private String createKey(Question question) {
+        return String.format("q__%s", question.getCategory());
     }
 
     @Override
-    public Mono<Question> find(String key) {
-        return connection.reactive().get(key)
+    public Flux<Question> find(String category) {
+        return connection.reactive().zrange("q__"+category, 0, -1)
             .map(this::decode);
+    }
+
+    @Override
+    public Flux<String> listCategories() {
+        // get the keys matching the question index
+        Flux<String> keys = connection.reactive().keys("q__*");
+        return keys.map(s -> s.substring(3));
     }
 
     private Question decode(String data) {

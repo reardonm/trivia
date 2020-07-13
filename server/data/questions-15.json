@@ -1,0 +1,584 @@
+[
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What was the code name for the &quot;Nintendo Gamecube&quot;?",
+    "correct_answer": "Dolphin",
+    "incorrect_answers": [
+      "Nitro",
+      "Revolution",
+      "Atlantis"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which of these features was added in the 1994 game &quot;Heretic&quot; that the original &quot;DOOM&quot; could not add due to limitations?",
+    "correct_answer": "Looking up and down",
+    "incorrect_answers": [
+      "Increased room sizes",
+      "Unlimited weapons",
+      "Highly-detailed textures"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What was the first video game in the Batman &quot;Arkham&quot; series?",
+    "correct_answer": "Arkham Asylum",
+    "incorrect_answers": [
+      "Arkham Knight",
+      "Arkham City",
+      "Arkham Origins"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which video game was recalled for containing a hidden, playable South Park episode?",
+    "correct_answer": "Tiger Woods 99 PGA Tour",
+    "incorrect_answers": [
+      "Tony Hawk&#039;s Pro Skater 3",
+      "Sonic Adventure",
+      "Madden 99"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Excluding their instructor, how many members of Class VII are there in the game &quot;Legend of Heroes: Trails of Cold Steel&quot;?",
+    "correct_answer": "9",
+    "incorrect_answers": [
+      "6",
+      "10",
+      "3"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In the Gamecube Version of &quot;Resident Evil&quot; what text document is open on the monitor of the computer in the Visual Data Room?",
+    "correct_answer": "A GDC Document",
+    "incorrect_answers": [
+      "Text Document on Herbs",
+      "Nothing",
+      "Document on B.O.Ws"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "There are 6 legendary cards in &quot;Clash Royale&quot;.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In the original &quot;Super Mario Bros.&quot;, what is the acceleration of Mario if he was in free fall?",
+    "correct_answer": "91.28 m/s^2",
+    "incorrect_answers": [
+      "110  m/s^2",
+      "9.42  m/s^2",
+      "4.4  m/s^2"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the name of the final boss in Turok: Dinosaur Hunter?",
+    "correct_answer": "The Campaigner",
+    "incorrect_answers": [
+      "The Primagen",
+      "Oblivion",
+      "Lord Tyrannus"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "When was the first &quot;Half-Life&quot; released?",
+    "correct_answer": "1998",
+    "incorrect_answers": [
+      "2004",
+      "1999",
+      "1997"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In &quot;Sonic the Hedgehog 3&quot; for the Sega Genesis, what is the color of the second Chaos Emerald you can get from Special Stages?",
+    "correct_answer": "Orange",
+    "incorrect_answers": [
+      "Blue",
+      "Green",
+      "Magenta"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "Niko Bellic is the protagonist of Grand Theft Auto IV.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "When was the game &#039;Portal 2&#039; released?",
+    "correct_answer": "2011",
+    "incorrect_answers": [
+      "2014",
+      "2009",
+      "2007"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In Left 4 Dead, what is the name of the Special Infected that is unplayable in Versus mode?",
+    "correct_answer": "The Witch",
+    "incorrect_answers": [
+      "The Tank",
+      "The Smoker",
+      "The Spitter"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "In &quot;Overwatch,&quot; an allied McCree will say &quot;Step right up&quot; upon using his ultimate ability Deadeye.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Who is the creator of the Super Smash Bros. Series?",
+    "correct_answer": "Masahiro Sakurai",
+    "incorrect_answers": [
+      "Reggie Fils-Aim&eacute;",
+      "Bill Trinen",
+      "Hideo Kojima"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In what Half-Life expansion can you find Gordon&#039;s picture in an &quot;Employee of the Month&quot; picture frame?",
+    "correct_answer": "Half-Life: Opposing Force",
+    "incorrect_answers": [
+      "Half-Life: Blue Shift",
+      "Half-Life: Decay",
+      "They Hunger"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "Danganronpa 2: Goodbye Despair featured all of the surviving students from the first game.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In PROTOTYPE 2. who is referred to as &quot;Tango Primary&quot;?",
+    "correct_answer": "James Heller",
+    "incorrect_answers": [
+      "Alex Mercer",
+      "Dana Mercer",
+      "Any Goliaths roaming around"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which is not a playable character in the 2005 video game Killer7?",
+    "correct_answer": "Frank Smith",
+    "incorrect_answers": [
+      "Mask de Smith",
+      "Dan Smith",
+      "Coyote Smith"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In Danganronpa: Trigger Happy Havoc, what is the protagonist&#039;s name?",
+    "correct_answer": "Makoto Naegi",
+    "incorrect_answers": [
+      "Hajime Hinata",
+      "Nagito Komaeda",
+      "Komaru Naegi"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What was the world&#039;s first handheld game device?",
+    "correct_answer": "Mattel Auto Race",
+    "incorrect_answers": [
+      "Game Boy",
+      "Microvision",
+      "Game &amp; Watch"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which water-type Pok&eacute;mon starter was introduced in the 4th generation of the series?",
+    "correct_answer": "Piplup",
+    "incorrect_answers": [
+      "Totodile",
+      "Oshawott",
+      "Mudkip"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "The names of Tom Nook&#039;s cousins in the Animal Crossing franchise are named &quot;Timmy&quot; and &quot;Jimmy&quot;.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which of these Pok&eacute;mon cannot learn Surf?",
+    "correct_answer": "Arbok",
+    "incorrect_answers": [
+      "Linoone",
+      "Tauros",
+      "Nidoking"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In Hitman: Blood Money, what is the name of the target in the mission &quot;Death of a Showman&quot;?",
+    "correct_answer": "Joseph Clarence",
+    "incorrect_answers": [
+      "The Swing King",
+      "Maynard John",
+      "Manuel Delgado"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "The default playermodel of Garry&#039;s Mod is this Half Life 2 character.",
+    "correct_answer": "Isaac Kleiner",
+    "incorrect_answers": [
+      "G-Man",
+      "Alyx Vance",
+      "Gordon Freeman"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What do the video games No Man&rsquo;s Sky and Mighty No. 9 have in common?",
+    "correct_answer": "Both were announced in 2013.",
+    "incorrect_answers": [
+      "Both were crowdfunded.",
+      "Both were developed by indie studios.",
+      "Both were released for the PlayStation 3."
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "Mortal Kombat was almost based on Jean-Claude Van Damme movie.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "In Riot Games &quot;League of Legends&quot; the name of Halloween event is called &quot;The Reckoning&quot;.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "How many voice channels does the Super Nintendo Entertainment System support?",
+    "correct_answer": "8",
+    "incorrect_answers": [
+      "6",
+      "10",
+      "12"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "&quot;Gimmick!&quot; is a Japanese Famicom game that uses a sound chip expansion in the cartridge. What is it called?",
+    "correct_answer": "FME-7",
+    "incorrect_answers": [
+      "VRC7",
+      "VRC6",
+      "MMC5"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What was the first Call of Duty game to include the Zombies gamemode?",
+    "correct_answer": "Call of Duty: World at War",
+    "incorrect_answers": [
+      "Call of Duty: Black Ops",
+      "Call of Duty: Modern Warfare 2",
+      "Call of Duty: Black Ops III"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which of the following Copy Abilities was only featured in &quot;Kirby &amp; The Amazing Mirror&quot;?",
+    "correct_answer": "Mini",
+    "incorrect_answers": [
+      "Magic",
+      "Smash",
+      "Missile"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Who is the main protagonist in Danganronpa 2: Goodbye Despair?",
+    "correct_answer": "Hajime Hinata",
+    "incorrect_answers": [
+      "Nagito Komaeda",
+      "Makoto Naegi",
+      "Junko Enoshima"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which variant of the MP5 is depicted in Counter-Strike 1.6?",
+    "correct_answer": "MP5N",
+    "incorrect_answers": [
+      "MP5SD",
+      "MP5K",
+      "MP5RAS"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is not a playable race in &quot;Final Fantasy XIV: A Realm Reborn&quot;?",
+    "correct_answer": "Hume",
+    "incorrect_answers": [
+      "Miqo&#039;te",
+      "Lalafell",
+      "Roegadyn"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In &quot;Call Of Duty: Zombies&quot;, which weapon does NOT deal any damage?",
+    "correct_answer": "31-79 JGb215",
+    "incorrect_answers": [
+      "Sliquifier",
+      "V-R11",
+      "Wunderwaffe DG-2"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "The ghosts in &quot;Pac-Man&quot; and &quot;Ms. Pac-Man&quot; have completely different behavior.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "The game &quot;Pocket Morty&quot; has a Morty called &quot;Pocket Mortys Morty&quot;?",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In the Halo series, which era of SPARTAN is Master Chief? ",
+    "correct_answer": "SPARTAN-II",
+    "incorrect_answers": [
+      "SPARTAN-I",
+      "SPARTAN-III",
+      "SPARTAN-IV"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the main character&#039;s name in &quot;Braid&quot;?",
+    "correct_answer": "Tim",
+    "incorrect_answers": [
+      "Boregard",
+      "James",
+      "Jackson"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In &quot;Need for Speed III: Hot Pursuit&quot;, what is the name of the fictional car?",
+    "correct_answer": "El Ni&ntilde;o",
+    "incorrect_answers": [
+      "R&aacute;pido",
+      "&Aacute;gil",
+      "La Ni&ntilde;a"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In the Kingdom Hearts series, which is not an optional boss you can fight?",
+    "correct_answer": "Master Yen Sid",
+    "incorrect_answers": [
+      "Sephiroth",
+      "Julius",
+      "Kurt Zisa"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who is credited with having created the world&#039;s first video game Easter Egg?",
+    "correct_answer": "Warren Robinett",
+    "incorrect_answers": [
+      "Julius Smith",
+      "Will Crowther",
+      "Don Woods"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What character is NOT apart of the Grand Theft Auto series?",
+    "correct_answer": "Michael Cardenas",
+    "incorrect_answers": [
+      "Packie McReary",
+      "Tommy Vercetti",
+      "Lester Crest"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In &quot;Kingdom Hearts&quot;, what mission are Donald and Goofy assigned by King Mickey?",
+    "correct_answer": "To find the Key bearer and stick with him!",
+    "incorrect_answers": [
+      "To find the Key bearer and steal the key!",
+      "To find the Key bearer and report back!",
+      "To find the Key bearer and kill him!"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which of the following games has the largest map size?",
+    "correct_answer": "Just Cause 2",
+    "incorrect_answers": [
+      "Grand Theft Auto 5",
+      "The Elder Scrolls 4:  Oblivion",
+      "The Witcher 3:  Wild Hunt"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In Fallout: New Vegas, which one of these casinos can you not play in?",
+    "correct_answer": "Lucky 38",
+    "incorrect_answers": [
+      "The Tops",
+      "Gammorah",
+      "Ultra-Luxe"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Rincewind from the 1995 Discworld game was voiced by which member of Monty Python?",
+    "correct_answer": "Eric Idle",
+    "incorrect_answers": [
+      "John Cleese",
+      "Terry Gilliam",
+      "Michael Palin"
+    ]
+  }
+]

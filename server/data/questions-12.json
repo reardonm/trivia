@@ -1,0 +1,588 @@
+[
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is not a wind instrument?",
+    "correct_answer": "Viola",
+    "incorrect_answers": [
+      "Oboe",
+      "Trombone",
+      "Duduk"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who had a 1973 hit with the song &#039;Hocus Pocus&#039;?",
+    "correct_answer": "Focus",
+    "incorrect_answers": [
+      "Pilot",
+      "Rush",
+      "AC/DC"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who is the best selling artist of all time?",
+    "correct_answer": "The Beatles",
+    "incorrect_answers": [
+      "Michael Jackson",
+      "Elton John",
+      "Elvis Presley"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Who had a 1969 top 5 hit with the song,  &#039;A Boy Named Sue&#039;?",
+    "correct_answer": "Johnny Cash",
+    "incorrect_answers": [
+      "Bob Dylan",
+      "Willie Nelson",
+      "Kris Kristofferson"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who had a US and UK number 1 hit in 1962 with the instrumental, &#039;Telstar&#039;?",
+    "correct_answer": "The Tornados",
+    "incorrect_answers": [
+      "The Ventures",
+      "The Spotnicks",
+      "The Tremeloes"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What was the title of ABBA`s first UK hit single?",
+    "correct_answer": "Waterloo",
+    "incorrect_answers": [
+      "Mamma Mia",
+      "Fernando",
+      "Dancing Queen"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Who is the lead singer of Pearl Jam?",
+    "correct_answer": "Eddie Vedder",
+    "incorrect_answers": [
+      "Ozzy Osbourne",
+      "Stone Gossard",
+      "Kurt Cobain"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which rap group released the album &quot;Straight Outta Compton&quot;?",
+    "correct_answer": "N.W.A",
+    "incorrect_answers": [
+      "Wu-Tang Clan",
+      "Run-D.M.C.",
+      "Beastie Boys"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which of these songs was released in 1996?",
+    "correct_answer": "The Smashing Pumpkins - &quot;1979&quot;",
+    "incorrect_answers": [
+      "Prince - &quot;1999&quot;",
+      "James Blunt - &quot;1973&quot;",
+      "David Bowie - &quot;1984&quot;"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "The song &quot;Twin Size Mattress&quot; was written by which band?",
+    "correct_answer": "The Front Bottoms",
+    "incorrect_answers": [
+      "Twenty One Pilots",
+      "The Wonder Years",
+      "The Smith Street Band"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which singer was featured in Swedish producer Avicii&#039;s song &quot;Wake Me Up&quot;?",
+    "correct_answer": "Aloe Blacc",
+    "incorrect_answers": [
+      "John Legend",
+      "CeeLo Green",
+      "Pharrell Williams"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which member of the English band &quot;The xx&quot; released their solo album &quot;In Colour&quot; in 2015?",
+    "correct_answer": "Jamie xx",
+    "incorrect_answers": [
+      "Romy Madley Croft",
+      "Oliver Sim",
+      "Baria Qureshi"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is the name of the album released in 2014 by American band Maroon 5?",
+    "correct_answer": "V",
+    "incorrect_answers": [
+      "X",
+      "III",
+      "IV"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What genre of EDM is the Dutch DJ, musician, and remixer Armin van Buuren most well-known for?",
+    "correct_answer": "Trance",
+    "incorrect_answers": [
+      "House",
+      "Drum and Bass",
+      "Dubstep"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "How many members are there in the idol group &quot;&micro;&#039;s&quot;?",
+    "correct_answer": "9",
+    "incorrect_answers": [
+      "48",
+      "6",
+      "3"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which of these artists did NOT remix the song &quot;Faded&quot; by Alan Walker?",
+    "correct_answer": "Skrillex",
+    "incorrect_answers": [
+      "Ti&euml;sto",
+      "Slushii",
+      "Dash Berlin"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which of these artists has NOT been a member of dancehall group Major Lazer?",
+    "correct_answer": "Skrillex",
+    "incorrect_answers": [
+      "Diplo",
+      "Jillionaire",
+      "Walshy Fire"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "The 1952 musical composition 4&#039;33&quot;, composed by prolific American composer John Cage, is mainly comprised of what sound?",
+    "correct_answer": "Silence",
+    "incorrect_answers": [
+      "Farts",
+      "People talking",
+      "Cricket chirps"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which of these is NOT a song featured on the Lockjaw EP released in 2013 by Flume &amp; Chet Faker?",
+    "correct_answer": "Left Alone",
+    "incorrect_answers": [
+      "What About Us",
+      "This Song Is Not About A Girl",
+      "Drop The Game"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which of these is NOT the name of an album released by English singer-songwriter Adele?",
+    "correct_answer": "12",
+    "incorrect_answers": [
+      "19",
+      "21",
+      "25"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which of the following is NOT a real song from the band Thousand Foot Krutch?",
+    "correct_answer": "Limitless Fury",
+    "incorrect_answers": [
+      "Let The Sparks Fly",
+      "Down",
+      "Give Up The Ghost"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What is the English title of the vaporwave track &quot;リサフランク420 / 現代のコンピュー&quot; by Macintosh Plus (Vektroid)?",
+    "correct_answer": "Lisa Frank 420 / Modern Computing",
+    "incorrect_answers": [
+      "Smoke Weed 420 / Everyday",
+      "Make Your Move 420 / My Mind",
+      "It&#039;s All In Your Head 420 / Understand"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "May 16th of every year is known as __________ Day, named after a punk band prominent in the 1990s.",
+    "correct_answer": "Lagwagon",
+    "incorrect_answers": [
+      "Goldfinger",
+      "Less Than Jake",
+      "Lit"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What was the title of Sakamoto Kyu&#039;s song &quot;Ue o Muite Arukou&quot; (I Look Up As I Walk) changed to in the United States?",
+    "correct_answer": "Sukiyaki",
+    "incorrect_answers": [
+      "Takoyaki",
+      "Sushi",
+      "Oden"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who is the frontman of Muse?",
+    "correct_answer": "Matt Bellamy",
+    "incorrect_answers": [
+      "Dominic Howard",
+      "Thom Yorke",
+      "Jonny Greenwood"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which iconic album cover features the pulsar waves of CP 1919 placed in the center of the cover?",
+    "correct_answer": "Unknown Pleasures",
+    "incorrect_answers": [
+      "The Dark Side of the Moon",
+      "London Calling",
+      "The Velvet Underground &amp; Nico"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "The 2016 song &quot;Starboy&quot; by Canadian singer The Weeknd features which prominent electronic artist?",
+    "correct_answer": "Daft Punk",
+    "incorrect_answers": [
+      "deadmau5",
+      "Disclosure",
+      "DJ Shadow"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "EDM label Monstercat signs tracks instead of artists.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What year was Red Hot Chill Pepper&#039;s album &quot;Californication&quot; released?",
+    "correct_answer": "1999",
+    "incorrect_answers": [
+      "1997",
+      "2000",
+      "1992"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In the Panic! At the Disco&#039;s song &quot;Nothern Downpour&quot;, which lyric follows &#039;I know the world&#039;s a broken bone&#039;.",
+    "correct_answer": "&quot;So melt your headaches call it home&quot;",
+    "incorrect_answers": [
+      "&quot;So sing your song until you&#039;re home&quot;",
+      "&quot;So let them know they&#039;re on their own&quot;",
+      "&quot;So start a fire in their cold stone&quot;"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "3 members of 2 Live Crew were arrested for playing songs from their album, As Nasty As They Wanna Be, live.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which song on Daft Punk&#039;s &quot;Random Access Memories&quot; features Pharrell Williams?",
+    "correct_answer": "Get Lucky",
+    "incorrect_answers": [
+      "Doin&#039; It Right",
+      "Instant Crush",
+      "The Game of Love"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which of the following bands is Tom DeLonge not a part of?",
+    "correct_answer": "+44",
+    "incorrect_answers": [
+      "Box Car Racer",
+      "Blink-182",
+      "Angels &amp; Airwaves"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In which year did &quot;Caravan Palace&quot; release their first album?",
+    "correct_answer": "2008",
+    "incorrect_answers": [
+      "2000",
+      "2015",
+      "2004"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which rock band released the album &quot;The Bends&quot; in March 1995?",
+    "correct_answer": "Radiohead",
+    "incorrect_answers": [
+      "Nirvana",
+      "Coldplay",
+      "U2"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who was the lead singer and frontman of rock band R.E.M?",
+    "correct_answer": "Michael Stipe",
+    "incorrect_answers": [
+      "Chris Martin",
+      "Thom Yorke",
+      "George Michael"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Moby, an American DJ, singer, and musician, achieved worldwide success for the 1999 release of which of the following albums?",
+    "correct_answer": "Play",
+    "incorrect_answers": [
+      "Everything Is Wrong",
+      "Moby",
+      "18"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "Nick Mason is the only member to appear on every Pink Floyd album.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "boolean",
+    "difficulty": "hard",
+    "question": "Pete Townshend&#039;s solo album, &quot;White City: A Novel&quot;, is set in the metropolitan area of Chicago.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which of these songs did Jimi Hendrix cover?",
+    "correct_answer": "All of these songs",
+    "incorrect_answers": [
+      "Sgt. Pepper&#039;s Lonely Hearts Club Band",
+      "All Along the Watchtower",
+      "House of the Rising Sun"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which Iron Maiden album did the song &quot;Dream of Mirrors&quot; feature in?",
+    "correct_answer": "Brave New World",
+    "incorrect_answers": [
+      "Dance of Death",
+      "A Matter of Life and Death",
+      "Somewhere in Time"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "The &#039;In the Flesh&#039; tour was used in support of what Pink Floyd album?",
+    "correct_answer": "Animals",
+    "incorrect_answers": [
+      "The Wall",
+      "Wish You Were Here",
+      "The Final Cut"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Liam Howlett founded which electronic music group in 1990?",
+    "correct_answer": "The Prodigy",
+    "incorrect_answers": [
+      "The Chemical Brothers",
+      "The Crystal Method",
+      "Infected Mushroom"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "&quot;Doctor Jones&quot;, &quot;Turn Back Time&quot; and &quot;Barbie Girl&quot; were UK number ones for which Eurodance group?",
+    "correct_answer": "Aqua",
+    "incorrect_answers": [
+      "Vengaboys",
+      "Eiffel 65",
+      "Sash!"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Pamina and Papageno are characters in what Mozart opera?",
+    "correct_answer": "The Magic Flute",
+    "incorrect_answers": [
+      "The Marriage of Figaro",
+      "The Impresario",
+      "The Goose of Cairo"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "A Facebook campaign placed Rage Against The Machine&#039;s &quot;Killing in the Name Of&quot; as the UK Christmas Number 1 in 2009.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "Metallica collaborated with Rowan Atkinson&#039;s Mr Bean on a 1992 comic relief single.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which song previously recorded by Elvis Presley was covered by UB40 with a reggae beat?",
+    "correct_answer": "Can&#039;t Help Falling in Love",
+    "incorrect_answers": [
+      "Jailhouse Rock",
+      "In the Ghetto",
+      "Wooden Heart"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which music publication is often abbreviated to NME?",
+    "correct_answer": "New Musical Express",
+    "incorrect_answers": [
+      "New Metro Entertainment",
+      "Next Musical Enterprise",
+      "North Manchester Express"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "John Williams composed the music for &quot;Star Wars&quot;.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  }
+]

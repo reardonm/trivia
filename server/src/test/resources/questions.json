@@ -1,0 +1,602 @@
+[
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which movie released in 2016 features Superman and Batman fighting?",
+    "correct_answer": "Batman v Superman: Dawn of Justice",
+    "incorrect_answers": [
+      "Batman v Superman: Superapocalypse",
+      "Batman v Superman: Black of Knight",
+      "Batman v Superman: Knightfall"
+    ]
+  },
+  {
+    "category": "Politics",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who was the British Prime Minister at the outbreak of the Second World War?",
+    "correct_answer": "Neville Chamberlain",
+    "incorrect_answers": [
+      "Clement Attlee",
+      "Winston Churchill",
+      "Stanley Baldwin"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "When was the movie &#039;Con Air&#039; released?",
+    "correct_answer": "1997",
+    "incorrect_answers": [
+      "1985",
+      "1999",
+      "1990"
+    ]
+  },
+  {
+    "category": "Entertainment: Comics",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What&#039;s the name of Batman&#039;s parents?",
+    "correct_answer": "Thomas &amp; Martha",
+    "incorrect_answers": [
+      "Joey &amp; Jackie",
+      "Jason &amp; Sarah",
+      "Todd &amp; Mira"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which is the chemical name of H2O?",
+    "correct_answer": "Dihydrogen Monoxide",
+    "incorrect_answers": [
+      "Ammonium chloride",
+      "Anhydrous Sodium Carbonate",
+      "Manganese dioxide"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who voiced the character Draco in the 1996 movie &#039;DragonHeart&#039;?",
+    "correct_answer": "Sean Connery",
+    "incorrect_answers": [
+      "Dennis Quaid",
+      "Pete Postlethwaite",
+      "Brian Thompson"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In past times, what would a gentleman keep in his fob pocket?",
+    "correct_answer": "Watch",
+    "incorrect_answers": [
+      "Money",
+      "Keys",
+      "Notebook"
+    ]
+  },
+  {
+    "category": "Geography",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "How many counties in the Republic of Ireland.",
+    "correct_answer": "26",
+    "incorrect_answers": [
+      "32",
+      "28",
+      "30"
+    ]
+  },
+  {
+    "category": "Animals",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "The Kākāpō is a large, flightless, nocturnal parrot native to which country?",
+    "correct_answer": "New Zealand",
+    "incorrect_answers": [
+      "South Africa",
+      "Australia",
+      "Madagascar"
+    ]
+  },
+  {
+    "category": "Animals",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What color/colour is a polar bear&#039;s skin?",
+    "correct_answer": "Black",
+    "incorrect_answers": [
+      "White",
+      "Pink",
+      "Green"
+    ]
+  },
+  {
+    "category": "Art",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which artist&rsquo;s studio was known as &#039;The Factory&#039;?",
+    "correct_answer": "Andy Warhol",
+    "incorrect_answers": [
+      "Roy Lichtenstein",
+      "David Hockney",
+      "Peter Blake"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which Formula One driver was nicknamed &#039;The Professor&#039;?",
+    "correct_answer": "Alain Prost",
+    "incorrect_answers": [
+      "Ayrton Senna",
+      "Niki Lauda",
+      "Emerson Fittipaldi"
+    ]
+  },
+  {
+    "category": "Entertainment: Books",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What was the name of the Mysterious Island, in Jules Verne&#039;s &quot;The Mysterious Island&quot;?",
+    "correct_answer": "Lincoln Island",
+    "incorrect_answers": [
+      "Vulcania Island",
+      "Prometheus Island",
+      "Neptune Island"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "If a &quot;360 no-scope&quot; is one full rotation before shooting, how many rotations would a &quot;1080 no-scope&quot; be?",
+    "correct_answer": "3",
+    "incorrect_answers": [
+      "4",
+      "2",
+      "5"
+    ]
+  },
+  {
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "The Battle of the Somme in World War I took place in which country?",
+    "correct_answer": "France",
+    "incorrect_answers": [
+      "Germany",
+      "Italy",
+      "Austria"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is the shape of the toy invented by Hungarian professor Ernő Rubik?",
+    "correct_answer": "Cube",
+    "incorrect_answers": [
+      "Sphere",
+      "Cylinder",
+      "Pyramid"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What does TIE stand for in reference to the TIE Fighter in &quot;Star Wars&quot;?",
+    "correct_answer": "Twin Ion Engine",
+    "incorrect_answers": [
+      "Twin Iron Engine",
+      "Twin Intercepter Engine",
+      "Twin Inception Engine"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which artist released the 2012 single &quot;Harlem Shake&quot;, which was used in numerous YouTube videos in 2013?",
+    "correct_answer": "Baauer",
+    "incorrect_answers": [
+      "RL Grime",
+      "NGHTMRE",
+      "Flosstradamus"
+    ]
+  },
+  {
+    "category": "Entertainment: Cartoon & Animations",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which city did Anger berate for ruining pizza in &quot;Inside Out&quot;?",
+    "correct_answer": "San Francisco",
+    "incorrect_answers": [
+      "Minnesota",
+      "Washington",
+      "California"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which of these Counter-Strike maps is a bomb defuse scenario?",
+    "correct_answer": "Prodigy",
+    "incorrect_answers": [
+      "747",
+      "Havana",
+      "Oilrig"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Who plays Alice in the Resident Evil movies?",
+    "correct_answer": "Milla Jovovich",
+    "incorrect_answers": [
+      "Madison Derpe",
+      "Milla Johnson",
+      "Kim Demp"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What&#039;s the Team Fortress 2 Scout&#039;s city of origin?",
+    "correct_answer": "Boston",
+    "incorrect_answers": [
+      "Sydney",
+      "Detroit",
+      "New York"
+    ]
+  },
+  {
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which one of these rulers did not belong to the Habsburg dynasty?",
+    "correct_answer": "Philip V",
+    "incorrect_answers": [
+      "Charles V",
+      "Philip II",
+      "Francis Joseph"
+    ]
+  },
+  {
+    "category": "Entertainment: Japanese Anime & Manga",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Winch of these names are not a character of JoJo&#039;s Bizarre Adventure?",
+    "correct_answer": "JoJo Kikasu",
+    "incorrect_answers": [
+      "Jean-Pierre Polnareff",
+      "George Joestar",
+      "Risotto Nero"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Who is the protagonist in Dead Rising (2006)?",
+    "correct_answer": "Frank West",
+    "incorrect_answers": [
+      "Chuck Greene",
+      "John North",
+      "Jason Grey"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which company made the Japanese RPG &quot;Dragon Quest&quot;?",
+    "correct_answer": "Square Enix",
+    "incorrect_answers": [
+      "Capcom",
+      "Konami",
+      "Blizzard"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the last letter of the Greek alphabet?",
+    "correct_answer": "Omega",
+    "incorrect_answers": [
+      "Mu",
+      "Epsilon",
+      "Kappa"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In Touhou: Embodiment of Scarlet Devil, what song plays during Flandre Scarlet&#039;s boss fight?",
+    "correct_answer": "U.N. Owen Was Her",
+    "incorrect_answers": [
+      "Septette for the Dead Princess",
+      "Flowering Night",
+      "Pierrot of the Star-Spangled Banner"
+    ]
+  },
+  {
+    "category": "Entertainment: Japanese Anime & Manga",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In the anime Assassination Classroom what is the class that Korosensei teaches?",
+    "correct_answer": "Class 3-E",
+    "incorrect_answers": [
+      "Class 3-A",
+      "Class 3-B",
+      "Class 3-D"
+    ]
+  },
+  {
+    "category": "Science & Nature",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In Chemistry, how many isomers does Butanol (C4H9OH) have?",
+    "correct_answer": "4",
+    "incorrect_answers": [
+      "3",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "category": "Entertainment: Board Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In standard Monopoly, what&#039;s the rent if you land on Park Place with no houses?",
+    "correct_answer": "$35",
+    "incorrect_answers": [
+      "$30",
+      "$50",
+      "$45"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In &quot;Jurassic World&quot;, what is the name of the dinosaur that is a genetic hybrid?",
+    "correct_answer": "Indominus Rex",
+    "incorrect_answers": [
+      "Mosasaurus",
+      "Pteranodon",
+      "Tyrannosaurus Rex "
+    ]
+  },
+  {
+    "category": "Entertainment: Comics",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What year was the first San Diego Comic-Con?",
+    "correct_answer": "1970",
+    "incorrect_answers": [
+      "2000",
+      "1990",
+      "1985"
+    ]
+  },
+  {
+    "category": "Sports",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which team won 2014 FIFA World Cup in Brazil?",
+    "correct_answer": "Germany",
+    "incorrect_answers": [
+      "Argentina",
+      "Brazil",
+      "Netherlands"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which survivor in Left 4 Dead sacrificed themself to save the other survivors?",
+    "correct_answer": "Bill",
+    "incorrect_answers": [
+      "Louis",
+      "Francis",
+      "Zoey"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What album did The Lumineers release in 2016?",
+    "correct_answer": "Cleopatra",
+    "incorrect_answers": [
+      "Winter",
+      "The Lumineers",
+      "Tracks From The Attic"
+    ]
+  },
+  {
+    "category": "Entertainment: Television",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What is the name of the main character in &quot;The Flash&quot; TV series?",
+    "correct_answer": "Barry Allen",
+    "incorrect_answers": [
+      "Oliver Queen",
+      "Bart Allen",
+      "Bruce Wayne"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "According to Overwatch&#039;s lore, who was once a member of the Deadlock Gang?",
+    "correct_answer": "McCree",
+    "incorrect_answers": [
+      "Roadhog",
+      "Soldier 76",
+      "Junkrat"
+    ]
+  },
+  {
+    "category": "Entertainment: Film",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Who plays the character of Po in the Kung Fu Panda movies?",
+    "correct_answer": "Jack Black",
+    "incorrect_answers": [
+      "Mirana Jonnes",
+      "McConahey Ramses",
+      "Jim Petersson"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Ellen McLain, the voice of GLaDOS in the Portal game series, is married to the voice actor for which Team Fortress 2 character?",
+    "correct_answer": "Sniper",
+    "incorrect_answers": [
+      "Heavy",
+      "Soldier",
+      "Scout"
+    ]
+  },
+  {
+    "category": "Entertainment: Television",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In season one of the Netflix political drama &quot;House of Cards&quot;, what government position does Frank Underwood hold?",
+    "correct_answer": "House Majority Whip",
+    "incorrect_answers": [
+      "Attorney General",
+      "President",
+      "Chief of Staff"
+    ]
+  },
+  {
+    "category": "Entertainment: Books",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the name of the gang that Ponyboy is a part of in the book, The Outsiders?",
+    "correct_answer": "The Greasers",
+    "incorrect_answers": [
+      "The Outsiders",
+      "The Mafia",
+      "The Socs"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What was Bank of America originally established as?",
+    "correct_answer": "Bank of Italy",
+    "incorrect_answers": [
+      "Bank of Long Island",
+      "Bank of Pennsylvania",
+      "Bank of Charlotte"
+    ]
+  },
+  {
+    "category": "General Knowledge",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who invented Pastafarianism?",
+    "correct_answer": "Bobby Henderson",
+    "incorrect_answers": [
+      "Eric Tignor",
+      "Bill Nye",
+      "Zach Soldi"
+    ]
+  },
+  {
+    "category": "Entertainment: Music",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which former boy-band star released hit solo single &quot;Angels&quot; in 1997?",
+    "correct_answer": "Robbie Williams",
+    "incorrect_answers": [
+      "Justin Timberlake",
+      "Harry Styles",
+      "Gary Barlow"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What is the perk that was introduced in the &quot;Call Of Duty: Zombies&quot; map, &quot;Mob Of The Dead&quot;?",
+    "correct_answer": "Electric Cherry",
+    "incorrect_answers": [
+      "Quick Revive",
+      "Vulture Aid",
+      "Tombstone"
+    ]
+  },
+  {
+    "category": "Entertainment: Video Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "In the &quot;Call Of Duty: Zombies&quot; map &quot;Origins&quot;, where is &quot;Stamin-Up&quot; located?",
+    "correct_answer": "Generator 5",
+    "incorrect_answers": [
+      "Generator 3",
+      "Generator 4",
+      "Excavation Site"
+    ]
+  },
+  {
+    "category": "Science: Computers",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "The C programming language was created by this American computer scientist. ",
+    "correct_answer": "Dennis Ritchie",
+    "incorrect_answers": [
+      "Tim Berners Lee",
+      "al-Khwārizmī",
+      "Willis Ware"
+    ]
+  },
+  {
+    "category": "Entertainment: Board Games",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Some of the &quot;Fallen Empires&quot; cards from &quot;Magic: The Gathering&quot; were misprinted on the backs of which other card game?",
+    "correct_answer": "Wyvern",
+    "incorrect_answers": [
+      "Pokemon",
+      "Dominion",
+      "Yu-Gi-Oh"
+    ]
+  },
+  {
+    "category": "Science: Computers",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What was the name of the first Bulgarian personal computer?",
+    "correct_answer": "IMKO-1",
+    "incorrect_answers": [
+      "Pravetz 82",
+      "Pravetz 8D",
+      "IZOT 1030"
+    ]
+  }
+]
