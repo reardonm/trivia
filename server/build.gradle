@@ -31,6 +31,7 @@ dependencies {
     implementation("io.micronaut:micronaut-http-server-netty")
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut.redis:micronaut-redis-lettuce")
+    implementation("io.micronaut.beanvalidation:micronaut-hibernate-validator")
     compileOnly("org.projectlombok:lombok:$lombokVersion")
     developmentOnly("io.micronaut:micronaut-runtime-osx:$micronautVersion")
     runtimeOnly("ch.qos.logback:logback-classic")
@@ -49,6 +50,7 @@ dependencies {
     testImplementation("org.mockito:mockito-junit-jupiter:$mockitoVersion")
     testImplementation("org.assertj:assertj-core:$assertjVersion")
     testImplementation("com.jayway.jsonpath:json-path:$jsonPathVersion")
+    testImplementation("org.awaitility:awaitility:$awaitilityVersion")
 }
 
 test.classpath += configurations.developmentOnly

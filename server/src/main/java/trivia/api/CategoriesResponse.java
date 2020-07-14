@@ -1,12 +1,11 @@
-package trivia.controller;
+package trivia.api;
 
-import lombok.Builder;
-import lombok.Value;
+import lombok.Data;
 
 import java.util.List;
 
-@Builder
-@Value
+@Data
 public class CategoriesResponse {
     private List<String> categories;
+
 }
