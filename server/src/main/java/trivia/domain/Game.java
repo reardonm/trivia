@@ -10,4 +10,6 @@ import lombok.Value;
 public class Game {
     private String id;
     private String category;
+    private int players;
+    private boolean started;
 }

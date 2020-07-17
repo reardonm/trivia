@@ -4,6 +4,7 @@ import lombok.SneakyThrows;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import trivia.domain.Difficulty;
+import trivia.domain.Game;
 import trivia.domain.Question;
 
 import java.io.InputStream;

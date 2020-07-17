@@ -24,7 +24,5 @@ public class GameServiceSpec {
         assertThat(g).isNotNull();
         assertThat(g.getId()).isNotBlank();
         assertThat(g.getCategory()).isEqualTo(category);
-
     }
-
 }

@@ -37,5 +37,4 @@ public abstract class IntegerationTestSupport implements TestPropertyProvider {
         // override redis URL to container
         return Map.of("redis.uri", String.format("redis://%s:%d", redis.getHost(), redis.getFirstMappedPort()));
     }
-
 }

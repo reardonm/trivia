@@ -10,9 +10,13 @@ import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Collection;
-import java.util.List;
+import java.util.Deque;
+import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
+/**
+ * Websocket client for testing. The ClientWebSocket annotation instructs Micronaut to produce an implementation at compile time.
+ */
 @Slf4j
 @ClientWebSocket("/games/{gameId}/{username}")
 public abstract class GameTestClient implements AutoCloseable {
@@ -30,7 +34,11 @@ public abstract class GameTestClient implements AutoCloseable {
     private String username;
 
     @Getter
-    private Collection<String> received = new ConcurrentLinkedQueue<>();
+    private final Queue<String> received = new ConcurrentLinkedQueue<>();
+
+    public void clearReceived() {
+        received.clear();
+    }
 
     @OnOpen
     public void onOpen(String gameId, String username, WebSocketSession session, HttpRequest<?> request) {

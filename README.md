@@ -13,6 +13,8 @@ npm start
 
 
 ## Building an executable jar
+NOTE: Build requires running docker machine for Redis
+
 ```
 ./gradlew assembleServerAndClient
 ```
