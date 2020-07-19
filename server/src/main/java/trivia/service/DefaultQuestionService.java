@@ -1,7 +1,7 @@
 package trivia.service;
 
 import reactor.core.publisher.Flux;
-import trivia.repository.QuestionRepository;
+import trivia.repository.GameRepository;
 
 import javax.inject.Singleton;
 import java.util.Objects;
@@ -9,9 +9,9 @@ import java.util.Objects;
 @Singleton
 public class DefaultQuestionService implements QuestionService {
 
-    private final QuestionRepository repository;
+    private final GameRepository repository;
 
-    public DefaultQuestionService(QuestionRepository repository) {
+    public DefaultQuestionService(GameRepository repository) {
         this.repository = Objects.requireNonNull(repository);
     }
 

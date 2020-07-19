@@ -14,14 +14,14 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import trivia.domain.Game;
 import trivia.service.DefaultQuestionService;
-import trivia.service.QuestionService;
 import trivia.service.GameService;
+import trivia.service.QuestionService;
+import trivia.service.DefaultGameService;
 
 import javax.inject.Inject;
 
 import java.util.List;
 import java.util.Map;
-import java.util.UUID;
 import java.util.regex.Pattern;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -46,9 +46,9 @@ public class TrivaControllerSpec {
         return mock(QuestionService.class);
     }
 
-    @MockBean(GameService.class)
+    @MockBean(DefaultGameService.class)
     GameService gameService() {
-        return mock(GameService.class);
+        return mock(DefaultGameService.class);
     }
 
 

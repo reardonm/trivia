@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import reactor.core.publisher.Flux;
 import trivia.TestData;
-import trivia.repository.QuestionRepository;
+import trivia.repository.GameRepository;
 
 import javax.inject.Inject;
 
@@ -21,7 +21,7 @@ import static org.mockito.Mockito.when;
 public class DefaultQuestionServiceSpec {
 
     @Inject
-    QuestionRepository repository;
+    GameRepository repository;
 
     @Inject
     ObjectMapper mapper;
@@ -30,9 +30,9 @@ public class DefaultQuestionServiceSpec {
 
     DefaultQuestionService service;
 
-    @MockBean(QuestionRepository.class)
-    QuestionRepository questionRepository() {
-        return mock(QuestionRepository.class);
+    @MockBean(GameRepository.class)
+    GameRepository repository() {
+        return mock(GameRepository.class);
     }
 
     @BeforeEach
