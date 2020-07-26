@@ -2,9 +2,11 @@ package trivia.service;
 
 import io.micronaut.test.annotation.MicronautTest;
 import io.micronaut.test.annotation.MockBean;
+import io.micronaut.websocket.WebSocketBroadcaster;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import reactor.core.publisher.Mono;
+import trivia.api.WebSocketGameHandler;
 import trivia.domain.Game;
 import trivia.repository.GameRepository;
 
@@ -19,11 +21,19 @@ public class DefaultGameServiceSpec {
     @Inject
     GameRepository repository;
 
+    @Inject
+    WebSocketBroadcaster broadcaster;
+
     GameService service;
 
     @MockBean(GameRepository.class)
     GameRepository repository() {
         return mock(GameRepository.class);
+    }
+
+    @MockBean(WebSocketBroadcaster.class)
+    WebSocketBroadcaster broadcaster() {
+        return mock(WebSocketBroadcaster.class);
     }
 
     @BeforeEach
@@ -53,8 +63,7 @@ public class DefaultGameServiceSpec {
         String username = "bob";
         String sessionId = "aSessionId";
 
-        when(repository.addPlayer(gameId, username)).thenReturn(Mono.just(2L));
-        when(repository.findGame(gameId)).thenReturn(Mono.just(Game.builder()
+        when(repository.addPlayer(gameId, username)).thenReturn(Mono.just(Game.builder()
             .id(gameId)
             .category("Math")
             .players(3)

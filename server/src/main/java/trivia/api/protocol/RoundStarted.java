@@ -1,4 +1,4 @@
-package trivia.api;
+package trivia.api.protocol;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
@@ -7,18 +7,18 @@ import lombok.Value;
 
 import java.util.List;
 
-@JsonDeserialize(builder = RoundCompleted.RoundCompletedBuilder.class)
+@JsonDeserialize(builder = RoundStarted.RoundStartedBuilder.class)
 @Value
 @Builder
-public class RoundCompleted implements GameMessage {
+public class RoundStarted implements GameMessage {
 
     private int round;
 
-    private String answer;
+    private String question;
 
-    private List<Integer> stats;
+    private List<String> answers;
 
     @JsonPOJOBuilder(withPrefix = "")
-    public static class RoundCompletedBuilder {
+    public static class RoundStartedBuilder {
     }
 }

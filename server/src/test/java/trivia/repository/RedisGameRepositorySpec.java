@@ -1,6 +1,7 @@
 package trivia.repository;
 
 import io.lettuce.core.api.StatefulRedisConnection;
+import io.lettuce.core.pubsub.StatefulRedisPubSubConnection;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import trivia.IntegerationTestSupport;
@@ -20,6 +21,9 @@ class RedisGameRepositorySpec extends IntegerationTestSupport {
     @Inject
     StatefulRedisConnection<String,String> connection;
 
+    @Inject
+    StatefulRedisPubSubConnection<String,String> pubSubConnection;
+
     RedisGameRepository underTest;
 
     TestData testData;
@@ -27,7 +31,7 @@ class RedisGameRepositorySpec extends IntegerationTestSupport {
     @BeforeEach
     public void setUp() {
         // Assume that we have Redis running locally?
-        underTest = new RedisGameRepository(connection, mapper);
+        underTest = new RedisGameRepository(connection, pubSubConnection, mapper);
         testData = TestData.load(mapper);
     }
 
@@ -114,15 +118,98 @@ class RedisGameRepositorySpec extends IntegerationTestSupport {
         ));
 
         // add bob as a player
-        assertThat(underTest.addPlayer(gameId, "bob").block()).isEqualTo(1L);
+        assertThat(underTest.addPlayer(gameId, "bob").block()).satisfies(g -> {
+            assertThat(g.getId()).isEqualTo(gameId);
+            assertThat(g.getPlayers()).isEqualTo(1);
+        });
         // add bob as a player
-        assertThat(underTest.addPlayer(gameId, "alice").block()).isEqualTo(1L);
+        assertThat(underTest.addPlayer(gameId, "alice").block()).satisfies(g -> {
+            assertThat(g.getId()).isEqualTo(gameId);
+            assertThat(g.getPlayers()).isEqualTo(2);
+        });
         // repeat alice (no change)
-        assertThat(underTest.addPlayer(gameId, "alice").block()).isEqualTo(0L);
+        assertThat(underTest.addPlayer(gameId, "alice").blockOptional()).isEmpty();
 
+        // check related data is as expected
+        assertThat(underTest.findGame(gameId).block()).satisfies(g -> {
+            assertThat(g.getId()).isEqualTo(gameId);
+            assertThat(g.getPlayers()).isEqualTo(2);
+        });
         assertThat(connection.sync().smembers(playerKey)).contains("bob", "alice");
         assertThat(connection.sync().hgetall(gameKey)).containsAllEntriesOf(Map.of(
             RedisGameRepository.CATEGORY, category
         ));
+
+        // Game is enqueued to for starting
+        assertThat(connection.sync().zscore(RedisGameRepository.GAME_PENDING_KEY, gameId)).isEqualTo(2.0);
+    }
+
+    @Test
+    void addPlayerToGame_NotFound() throws Exception {
+        // repeat alice (no change)
+        String doesNotExist = "9999";
+        var gameKey = RedisGameRepository.GAME_KEY_PREFIX + doesNotExist;
+        var playerKey = RedisGameRepository.PLAYERS_KEY_PREFIX + doesNotExist;
+
+        assertThat(underTest.addPlayer(doesNotExist, "alice").blockOptional()).isEmpty();
+
+        // check related data is as expected
+        assertThat(connection.sync().exists(gameKey)).isZero();
+        assertThat(connection.sync().exists(playerKey)).isZero();
+    }
+
+    @Test
+    void addPlayerToGame_AlreadyStarted() throws Exception {
+        // first create a game
+        var category = "Math";
+        var gameId = underTest.createGame(category).block();
+        var gameKey = RedisGameRepository.GAME_KEY_PREFIX + gameId;
+        var playerKey = RedisGameRepository.PLAYERS_KEY_PREFIX + gameId;
+
+        // force it to a started state
+        connection.sync().hset(gameKey, RedisGameRepository.STARTED, "true");
+
+        assertThat(underTest.addPlayer(gameId, "fred").blockOptional()).isEmpty();
+
+        // check related data is as expected
+        assertThat(connection.sync().exists(playerKey)).isZero();
+    }
+
+    @Test
+    void startPendingGames() throws Exception {
+        String g1 = underTest.createGame("Music").block();
+        String g2 = underTest.createGame("Music").block();
+        String g3 = underTest.createGame("Music").block();
+
+        assertThat(underTest.addPlayer(g1, "alice").block()).isNotNull();
+        assertThat(underTest.addPlayer(g1, "bob").block()).isNotNull();
+        assertThat(underTest.addPlayer(g1, "bubba").block()).isNotNull();
+
+        assertThat(underTest.addPlayer(g2, "zed").block()).isNotNull();
+        assertThat(underTest.addPlayer(g2, "foo").block()).isNotNull();
+
+        assertThat(underTest.addPlayer(g3, "fud").block()).isNotNull();
+
+
+        // ensure that three games are pending
+        assertThat(connection.sync().zrange(RedisGameRepository.GAME_PENDING_KEY, 0, -1))
+            .containsOnly(g1, g2, g3);
+
+        underTest.startPendingGames(2);
+
+        // change the games are all started
+        assertThat(underTest.findGame(g1).block()).satisfies(g -> {
+            assertThat(g.isStarted()).isTrue();
+        });
+        assertThat(underTest.findGame(g2).block()).satisfies(g -> {
+            assertThat(g.isStarted()).isTrue();
+        });
+        assertThat(underTest.findGame(g3).block()).satisfies(g -> {
+            assertThat(g.isStarted()).isFalse();
+        });
+
+        // ensure that only game 3 is still pending
+        assertThat(connection.sync().zrange(RedisGameRepository.GAME_PENDING_KEY, 0, -1))
+            .containsOnly(g3);
     }
 }

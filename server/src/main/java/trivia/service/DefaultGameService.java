@@ -1,6 +1,10 @@
 package trivia.service;
 
+import io.micronaut.scheduling.annotation.Scheduled;
+import io.reactivex.Observable;
 import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import trivia.domain.Game;
 import trivia.repository.GameRepository;
@@ -8,6 +12,7 @@ import trivia.repository.GameRepository;
 import javax.inject.Singleton;
 import java.util.Objects;
 
+@Slf4j
 @Singleton
 public class DefaultGameService implements GameService {
 
@@ -34,18 +39,20 @@ public class DefaultGameService implements GameService {
 
     @Override
     public Mono<Game> joinGame(String gameId, String username, String sessionId) {
-        return this.repository.addPlayer(gameId, username)
-            .flatMap(i -> {
-                if (i == 0) {
-                    return Mono.empty();
-                } else {
-                    return this.repository.findGame(gameId);
-                }
-            });
+        return this.repository.addPlayer(gameId, username);
     }
 
     @Override
     public Mono<Boolean> answerQuestion(String gameId, String username, String sessionId) {
         throw new UnsupportedOperationException("fix me");
+    }
+
+    public Flux<String> subscribeToGameChannel() {
+        return repository.subscribeToGameChannel();
+    }
+
+    @Scheduled(fixedDelay = "1s", initialDelay = "5s")
+    public void pollForGamesWithEnoughPlayers(String channel) {
+        repository.startPendingGames(minPlayers);
     }
 }

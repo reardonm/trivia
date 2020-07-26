@@ -5,6 +5,10 @@ import reactor.core.publisher.Mono;
 import trivia.domain.Game;
 import trivia.domain.Question;
 
+import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Function;
+
 
 public interface GameRepository {
 
@@ -20,11 +24,19 @@ public interface GameRepository {
      */
     Mono<String> createGame(String category);
 
+    Mono<Game> findGame(String gameId);
+
     /**
      * Add a player to the game
      * @return the new total number of players
      */
-    Mono<Long> addPlayer(String gameId, String username);
+    Mono<Game> addPlayer(String gameId, String username);
 
-    Mono<Game> findGame(String gameId);
+    /**
+    * Find pending games with a least the given number of joined players.
+     * @param minPlayers min number of player needed to start a game
+     */
+    void startPendingGames(int minPlayers);
+
+    Flux<String> subscribeToGameChannel();
 }

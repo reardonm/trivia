@@ -1,18 +1,18 @@
-package trivia.api;
+package trivia.api.protocol;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import lombok.Builder;
 import lombok.Value;
 
-@JsonDeserialize(builder = PlayerEliminated.PlayerEliminatedBuilder.class)
+@JsonDeserialize(builder = GameStarted.GameStartedBuilder.class)
 @Value
 @Builder
-public class PlayerEliminated implements GameMessage {
+public class GameStarted implements GameMessage {
 
-    private String username;
+    private String id;
 
     @JsonPOJOBuilder(withPrefix = "")
-    public static class PlayerEliminatedBuilder {
+    public static class GameStartedBuilder {
     }
 }
