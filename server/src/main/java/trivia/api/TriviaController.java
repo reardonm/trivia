@@ -6,6 +6,7 @@ import io.micronaut.http.uri.UriBuilder;
 import io.micronaut.validation.Validated;
 import reactor.core.publisher.Mono;
 import trivia.domain.Game;
+import trivia.domain.Question;
 import trivia.service.GameService;
 import trivia.service.QuestionService;
 
@@ -20,10 +21,12 @@ public class TriviaController {
 
     private final QuestionService questionService;
     private final GameService gameService;
+    private final int numRounds;
 
     public TriviaController(QuestionService questionService, GameService gameService) {
         this.questionService = Objects.requireNonNull(questionService);
         this.gameService = Objects.requireNonNull(gameService);
+        this.numRounds = 10; // FIXME: configure
     }
 
     @Get("/categories")
@@ -35,7 +38,8 @@ public class TriviaController {
 
     @Post("/games")
     Mono<HttpResponse<CreateGameResponse>> createGame(@Body @Valid CreateGameRequest request) {
-        return gameService.createGame(request.getCategory())
+        Mono<List<Question>> questions = questionService.allocateQuestions(request.getCategory(), numRounds);
+        return questions.flatMap(qs -> gameService.createGame(request.getCategory(), qs))
             .map(game -> HttpResponse.created(createCreateGameResponse(game.getId()), buildGameUri(game)));
     }
 

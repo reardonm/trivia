@@ -10,6 +10,7 @@ import trivia.domain.Game;
 import trivia.domain.Question;
 
 import javax.inject.Inject;
+import java.time.Duration;
 import java.util.*;
 import java.util.regex.Pattern;
 
@@ -31,7 +32,7 @@ class RedisGameRepositorySpec extends IntegerationTestSupport {
     @BeforeEach
     public void setUp() {
         // Assume that we have Redis running locally?
-        underTest = new RedisGameRepository(connection, pubSubConnection, mapper);
+        underTest = new RedisGameRepository(connection, pubSubConnection, new JsonEncoder(mapper));
         testData = TestData.load(mapper);
     }
 
@@ -46,29 +47,34 @@ class RedisGameRepositorySpec extends IntegerationTestSupport {
     }
 
     @Test
-    void incrementQuestionWeight() throws Exception {
-        var q8 = TestData.createMathQuestion(8);
-        assertThat(underTest.save(q8).block()).isEqualTo(1.0);
-        var q9 = TestData.createMathQuestion(9);
-        assertThat(underTest.save(q9).block()).isEqualTo(1.0);
+    void allocateQuestion() throws Exception {
+        List<Question> questions = TestData.createQuestions(10);
+        questions.forEach(q -> underTest.save(q).block());
 
-        List<Question> found = underTest.findQuestionsInCategory(TestData.MATH_CATEGORY).collectList().block();
-        assertThat(found).containsExactly(q8, q9);
+        // take a look at the top question
+        Question first = underTest.findQuestionsInCategory(TestData.MATH_CATEGORY, 0).blockFirst();
+        assertThat(first).isNotNull();
+        String q1 = first.getText();
 
-        // save q3 again which would increment the weight
-        assertThat(underTest.save(q8).block()).isEqualTo(2.0);
-        assertThat(underTest.save(q8).block()).isEqualTo(3.0);
-        assertThat(underTest.save(q8).block()).isEqualTo(4.0);
+        // repeat
+        first = underTest.findQuestionsInCategory(TestData.MATH_CATEGORY, 0).blockFirst();
+        assertThat(first.getText()).isEqualTo(q1); // same result
 
-        found = underTest.findQuestionsInCategory(TestData.MATH_CATEGORY).collectList().block();
-        assertThat(found).containsExactly(q9, q8);
+        // allocate questions
+        List<Question> allocated = underTest.allocateQuestions(TestData.MATH_CATEGORY, 2).collectList().block();
+        assertThat(allocated).hasSize(3);
+        assertThat(allocated.get(0).getText()).isEqualTo(q1); // same result
+
+        // repeat
+        first = underTest.findQuestionsInCategory(TestData.MATH_CATEGORY, 0).blockFirst();
+        assertThat(first.getText()).isNotEqualTo(q1); // new top question
     }
 
     @Test
     void listCategories() throws Exception {
         var data = testData.getQuestions();
         for (Question datum : data) {
-            assertThat(underTest.save(datum).block()).isEqualTo(1);
+            underTest.save(datum).block();
         }
 
         var categories = underTest.listCategories().collectList().block();
@@ -78,24 +84,24 @@ class RedisGameRepositorySpec extends IntegerationTestSupport {
 
     @Test
     void createGame() throws Exception {
-        String category = "Entertainment: Gum";
-        var id = underTest.createGame(category).block();
+        String title = "Entertainment: Gum";
+        String id = stageGame(title);
         assertThat(id).matches(Pattern.compile("\\d+"));
 
-        assertThat(connection.sync().hget(RedisGameRepository.GAME_KEY_PREFIX + id, "category"))
-            .isEqualTo(category);
+        assertThat(connection.sync().hget(RedisGameRepository.GAME_KEY_PREFIX + id, RedisGameRepository.TITLE))
+            .isEqualTo(title);
     }
 
     @Test
     void findGame() throws Exception {
-        String category = "Entertainment: Spam";
-        var id = underTest.createGame(category).block();
+        String title = "Entertainment: Spam";
+        String id = stageGame(title);
         assertThat(id).matches(Pattern.compile("\\d+"));
 
         Game g = underTest.findGame(id).block();
         assertThat(g).isNotNull();
         assertThat(g.getId()).isNotBlank();
-        assertThat(g.getCategory()).isNotBlank();
+        assertThat(g.getTitle()).isNotBlank();
         assertThat(g.getPlayers()).isEqualTo(0);
         assertThat(g.isStarted()).isFalse();
     }
@@ -108,13 +114,13 @@ class RedisGameRepositorySpec extends IntegerationTestSupport {
     @Test
     void addPlayerToGame() throws Exception {
         // first create a game
-        var category = "Math";
-        var gameId = underTest.createGame(category).block();
+        var title = "Math";
+        String gameId = stageGame(title);
         var gameKey = RedisGameRepository.GAME_KEY_PREFIX + gameId;
         var playerKey = RedisGameRepository.PLAYERS_KEY_PREFIX + gameId;
 
         assertThat(connection.sync().hgetall(gameKey)).containsAllEntriesOf(Map.of(
-            RedisGameRepository.CATEGORY, category
+            RedisGameRepository.TITLE, title
         ));
 
         // add bob as a player
@@ -137,7 +143,7 @@ class RedisGameRepositorySpec extends IntegerationTestSupport {
         });
         assertThat(connection.sync().smembers(playerKey)).contains("bob", "alice");
         assertThat(connection.sync().hgetall(gameKey)).containsAllEntriesOf(Map.of(
-            RedisGameRepository.CATEGORY, category
+            RedisGameRepository.TITLE, title
         ));
 
         // Game is enqueued to for starting
@@ -161,13 +167,13 @@ class RedisGameRepositorySpec extends IntegerationTestSupport {
     @Test
     void addPlayerToGame_AlreadyStarted() throws Exception {
         // first create a game
-        var category = "Math";
-        var gameId = underTest.createGame(category).block();
+        var title = "Math";
+        String gameId = stageGame(title);
         var gameKey = RedisGameRepository.GAME_KEY_PREFIX + gameId;
         var playerKey = RedisGameRepository.PLAYERS_KEY_PREFIX + gameId;
 
         // force it to a started state
-        connection.sync().hset(gameKey, RedisGameRepository.STARTED, "true");
+        connection.sync().hset(gameKey, RedisGameRepository.ROUND, "0");
 
         assertThat(underTest.addPlayer(gameId, "fred").blockOptional()).isEmpty();
 
@@ -175,11 +181,13 @@ class RedisGameRepositorySpec extends IntegerationTestSupport {
         assertThat(connection.sync().exists(playerKey)).isZero();
     }
 
+
+
     @Test
     void startPendingGames() throws Exception {
-        String g1 = underTest.createGame("Music").block();
-        String g2 = underTest.createGame("Music").block();
-        String g3 = underTest.createGame("Music").block();
+        String g1 = underTest.createGame("Music", List.of()).block();
+        String g2 = underTest.createGame("Music", List.of()).block();
+        String g3 = underTest.createGame("Music", List.of()).block();
 
         assertThat(underTest.addPlayer(g1, "alice").block()).isNotNull();
         assertThat(underTest.addPlayer(g1, "bob").block()).isNotNull();
@@ -195,7 +203,8 @@ class RedisGameRepositorySpec extends IntegerationTestSupport {
         assertThat(connection.sync().zrange(RedisGameRepository.GAME_PENDING_KEY, 0, -1))
             .containsOnly(g1, g2, g3);
 
-        underTest.startPendingGames(2);
+        underTest.startPendingGames(Duration.ofMillis(100), 2);
+        underTest.advancePendingRounds(Duration.ofMillis(100), Duration.ofMillis(200));
 
         // change the games are all started
         assertThat(underTest.findGame(g1).block()).satisfies(g -> {
@@ -211,5 +220,10 @@ class RedisGameRepositorySpec extends IntegerationTestSupport {
         // ensure that only game 3 is still pending
         assertThat(connection.sync().zrange(RedisGameRepository.GAME_PENDING_KEY, 0, -1))
             .containsOnly(g3);
+    }
+
+    private String stageGame(String title) {
+        List<Question> questions = TestData.createQuestions(5);
+        return underTest.createGame(title, questions).block();
     }
 }

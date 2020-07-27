@@ -10,10 +10,9 @@ import io.micronaut.websocket.annotation.ServerWebSocket;
 import lombok.extern.slf4j.Slf4j;
 import org.reactivestreams.Publisher;
 import reactor.core.Disposable;
-import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import trivia.api.protocol.*;
-import trivia.domain.Question;
+import trivia.domain.Round;
 import trivia.service.GameService;
 
 import javax.annotation.PostConstruct;
@@ -31,9 +30,8 @@ public class WebSocketGameHandler implements AutoCloseable {
 
     private final GameService gameService;
 
-    private final Map<String, WebSocketSession> sessions = new HashMap<>();
-
     private Disposable gameMessageEvents;
+    private Disposable roundMessageEvents;
 
     public WebSocketGameHandler(WebSocketBroadcaster broadcaster, GameService gameService) {
         this.broadcaster = Objects.requireNonNull(broadcaster);
@@ -46,12 +44,23 @@ public class WebSocketGameHandler implements AutoCloseable {
         this.gameMessageEvents = this.gameService.subscribeToGameChannel()
             .doOnNext(this::broadcastGameStarted)
             .subscribe();
+
+        this.roundMessageEvents = this.gameService.subscribeRoundMessageEvents()
+            .doOnNext(msg -> {
+                if (msg.getStarted()) {
+                    broadcastRoundStarted(msg.getGameId(), msg.getRound());
+                } else {
+                    broadcastRoundCompleted(msg.getGameId(), msg.getRound());
+                }
+            })
+            .subscribe();
     }
 
     @PreDestroy
     @Override
     public void close() throws Exception {
         this.gameMessageEvents.dispose();
+        this.roundMessageEvents.dispose();
     }
 
     /**
@@ -60,7 +69,6 @@ public class WebSocketGameHandler implements AutoCloseable {
     @OnOpen
     public Publisher<GameMessage> onOpen(String gameId, String username, WebSocketSession session) {
         log.info("Open web socket - Game[{}] username[{}]", gameId, username);
-        this.sessions.putIfAbsent(username, session);
         Mono<GameMessage> message = gameService.joinGame(gameId, username, session.getId())
             .map(g -> PlayerJoined.builder()
                     .username(username)
@@ -83,7 +91,7 @@ public class WebSocketGameHandler implements AutoCloseable {
         log.info("Answer - Game[{}] username[{}]: {}", gameId, username, message);
 
         // if correct answer, send PlayerAdvanced message, otherwise send PlayerEliminated message.
-        return gameService.answerQuestion(gameId, username, session.getId())
+        return gameService.answerQuestion(gameId, message)
             .map(b -> b ? PlayerAdvanced.builder().username(username).build() : PlayerEliminated.builder().username(username).build())
             .flatMap(msg -> Mono.from(session.send(msg))); // not broadcast
     }
@@ -96,7 +104,6 @@ public class WebSocketGameHandler implements AutoCloseable {
         String gameId,
         String username,
         WebSocketSession session) {
-        sessions.remove(username);
         log.info("Player[{}] left Game[{}]", username, gameId);
         return Mono.empty();
     }
@@ -107,25 +114,30 @@ public class WebSocketGameHandler implements AutoCloseable {
         broadcaster.broadcastSync(msg, JSON_TYPE, isGame(gameId));
     }
 
-    void broadcastRoundStarted(String gameId, int round, Question question) {
+    void broadcastRoundStarted(String gameId, int roundNumber) {
         // shuffle correct and incorrect answers
-        var answers = new ArrayList<>(question.getIncorrectAnswers());
-        answers.add(question.getCorrectAnswer());
+        Round round = gameService.findRound(gameId, roundNumber).blockOptional().orElseThrow(); // FIXME
+        // move to service
+        var answers = new ArrayList<>(round.getQuestion().getIncorrectAnswers());
+        answers.add(round.getQuestion().getCorrectAnswer());
         Collections.shuffle(answers);
         var msg = RoundStarted.builder()
-            .round(round)
-            .question(question.getQuestion())
+            .round(roundNumber)
+            .question(round.getQuestion().getText())
             .answers(answers)
             .build();
         log.info("Game[{}] Round[{}] started", gameId, round);
         broadcaster.broadcastSync(msg, JSON_TYPE, isGame(gameId));
     }
 
-    void broadcastRoundCompleted(String gameId, int round, Question question, Map<String,Integer> stats) {
+    void broadcastRoundCompleted(String gameId, int roundNumber) {
+        Round round = gameService.findRound(gameId, roundNumber).blockOptional().orElseThrow(); // FIXME
+        Map<String,Integer> stats = gameService.findStats(gameId, roundNumber).blockOptional().orElseThrow(); // FIXME
         var msg = RoundCompleted.builder()
-            .round(round)
-            .answer(question.getCorrectAnswer())
+            .round(roundNumber)
+            .answer(round.getQuestion().getCorrectAnswer())
             .stats(stats)
+            .players(round.getPlayers())
             .build();
         log.info("Game[{}] Round[{}] completed", gameId, round);
         broadcaster.broadcastSync(msg, JSON_TYPE, isGame(gameId));

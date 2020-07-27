@@ -6,10 +6,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import trivia.domain.Difficulty;
 import trivia.domain.Game;
 import trivia.domain.Question;
+import trivia.domain.Round;
 
 import java.io.InputStream;
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -21,9 +23,31 @@ public class TestData {
         return Question.builder()
             .category(MATH_CATEGORY)
             .difficulty(Difficulty.easy)
-            .question(String.format("What is %d + %d?", n, n))
+            .text(String.format("What is %d + %d?", n, n))
             .correctAnswer(String.valueOf(n+n))
-            .incorrectAnswers(List.of(String.valueOf(n+1),String.valueOf(n*n),"Donkey"))
+            .incorrectAnswers(List.of(String.valueOf(n+1),String.valueOf(n * n + 1),"Donkey"))
+            .build();
+    }
+
+    public static List<Question> createQuestions(int n) {
+        return IntStream.range(0, n)
+            .mapToObj(i -> createMathQuestion(i + 1))
+            .collect(Collectors.toList());
+    }
+
+    public static Game createGame(String gameId) {
+        return Game.builder()
+            .id(gameId)
+            .title("Math")
+            .players(3)
+            .build();
+    }
+
+    public static Round createRound(int roundNumber) {
+        return Round.builder()
+            .number(roundNumber)
+            .question(TestData.createMathQuestion(3))
+            .players(3)
             .build();
     }
 
@@ -36,6 +60,7 @@ public class TestData {
             return new TestData(questions);
         }
     }
+
 
     private final List<Question> questions;
 

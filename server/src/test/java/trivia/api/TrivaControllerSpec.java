@@ -12,6 +12,7 @@ import io.micronaut.test.annotation.MockBean;
 import org.junit.jupiter.api.Test;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import trivia.TestData;
 import trivia.domain.Game;
 import trivia.service.DefaultQuestionService;
 import trivia.service.GameService;
@@ -70,9 +71,11 @@ public class TrivaControllerSpec {
     @Test
     void post_create_game() {
         String category = "Math";
-        when(gameService.createGame(category)).thenReturn(Mono.just(Game.builder()
+        int rounds = 10;
+        when(questionService.allocateQuestions(category, rounds)).thenReturn(Mono.just(TestData.createQuestions(rounds)));
+        when(gameService.createGame(eq(category), anyList())).thenReturn(Mono.just(Game.builder()
             .id("100")
-            .category(category)
+            .title(category)
             .build()));
 
         var response = client.toBlocking().exchange(HttpRequest.POST("/games", Map.of("category", category)), String.class);
@@ -84,7 +87,8 @@ public class TrivaControllerSpec {
         ReadContext ctx = JsonPath.parse(response.body());
         assertThat(ctx.<String>read("$.gameId")).isNotBlank();
 
-        verify(gameService, times(1)).createGame(category);
+        verify(questionService, times(1)).allocateQuestions(eq(category), eq(rounds));
+        verify(gameService, times(1)).createGame(eq(category), anyList());
     }
 
     @Test
@@ -100,6 +104,6 @@ public class TrivaControllerSpec {
             assertThat(ctx.<String>read("$.message")).isEqualTo("request.category: must not be blank");
         });
 
-        verify(gameService, never()).createGame(any(String.class));
+        verify(gameService, never()).createGame(any(String.class), anyList());
     }
 }

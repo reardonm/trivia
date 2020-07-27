@@ -8,17 +8,17 @@ import io.micronaut.test.annotation.MicronautTest;
 import io.micronaut.test.annotation.MockBean;
 import io.micronaut.websocket.RxWebSocketClient;
 import org.awaitility.Awaitility;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import trivia.domain.Difficulty;
+import trivia.TestData;
 import trivia.domain.Game;
 import trivia.domain.Question;
 import trivia.service.GameService;
 
 import javax.inject.Inject;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -47,18 +47,18 @@ public class WebSocketGameHandlerSpec {
     GameService gameService() {
         GameService mock = mock(GameService.class);
         when(mock.subscribeToGameChannel()).thenReturn(Flux.empty());
+        when(mock.subscribeRoundMessageEvents()).thenReturn(Flux.empty());
         return mock;
     }
 
     private final String gameId = "100";
     private final String userName = "alice";
     private final String uri = String.format("/games/%s/%s", gameId, userName);
-
+    private final Game game = TestData.createGame(gameId);
 
     @Test
     public void join_game_and_start() throws Exception {
         //  when Alice joins there will be enough players to start the game
-        Game game = createGame();
         when(gameService.joinGame(eq(gameId), eq(userName), any(String.class))).thenReturn(Mono.just(game));
 
         //  Alice joins the game
@@ -90,15 +90,18 @@ public class WebSocketGameHandlerSpec {
     @Test
     public void player_eliminated_for_incorrect_answer() throws Exception {
         //  Given Alice has joined a game
-        Game game = createGame();
         GameTestClient gameClient = joinGame(game);
 
+        var round = TestData.createRound(0);
+        when(gameService.findRound(eq(gameId), eq(0))).thenReturn(Mono.just(round));
+
         //  when Alice answers a question it will be incorrect
-        when(gameService.answerQuestion(eq(gameId), eq(userName), any(String.class))).thenReturn(Mono.just(false));
-        var question = broadcastQuestion(gameClient);
+        when(gameService.answerQuestion(eq(gameId), any(String.class))).thenReturn(Mono.just(false));
+
+        broadcastQuestion(gameClient, round.getQuestion());
 
         // Alice sends back incorrect answer, gets back a player_eliminated
-        gameClient.send(question.getIncorrectAnswers().get(1));
+        gameClient.send(round.getQuestion().getIncorrectAnswers().get(1));
         awaitReceivedMessages(gameClient, 1);
         var msg = gameClient.getReceived().poll();
         ReadContext ctx = JsonPath.parse(msg);
@@ -111,17 +114,19 @@ public class WebSocketGameHandlerSpec {
     @Test
     public void player_advances_for_correct_answer() throws Exception {
         //  Given Alice has joined a game
-        Game game = createGame();
         GameTestClient gameClient = joinGame(game);
 
+        var round = TestData.createRound(0);
+        when(gameService.findRound(eq(gameId), eq(0))).thenReturn(Mono.just(round));
+
         //  when Alice answers a question it will be correct
-        when(gameService.answerQuestion(eq(gameId), eq(userName), any(String.class))).thenReturn(Mono.just(true));
+        when(gameService.answerQuestion(eq(gameId), any(String.class))).thenReturn(Mono.just(true));
 
         // round started
-        var question = broadcastQuestion(gameClient);
+        broadcastQuestion(gameClient, round.getQuestion());
 
         // Alice sends back correct answer, gets back a player_advanced
-        gameClient.send(question.getCorrectAnswer());
+        gameClient.send(round.getQuestion().getCorrectAnswer());
         awaitReceivedMessages(gameClient, 1);
         var msg = gameClient.getReceived().poll();
         ReadContext ctx = JsonPath.parse(msg);
@@ -134,26 +139,29 @@ public class WebSocketGameHandlerSpec {
     @Test
     public void stats_broadcast_when_round_is_completed() throws Exception {
         //  Given Alice has joined a game
-        Game game = createGame();
         GameTestClient gameClient = joinGame(game);
-        int round = 3;
-        var question = createQuestion();
-        gameHandler.broadcastRoundCompleted(gameId, round, question, Map.of(
-            question.getCorrectAnswer(), 2,
-            question.getIncorrectAnswers().get(0), 0,
-            question.getIncorrectAnswers().get(1), 1));
+        var round = TestData.createRound(2);
+        when(gameService.findRound(eq(gameId), eq(round.getNumber()))).thenReturn(Mono.just(round));
+
+        Map<String, Integer> stats = Map.of(
+            round.getQuestion().getCorrectAnswer(), 2,
+            round.getQuestion().getIncorrectAnswers().get(0), 0,
+            round.getQuestion().getIncorrectAnswers().get(1), 1);
+        when(gameService.findStats(eq(gameId), eq(round.getNumber()))).thenReturn(Mono.just(stats));
+
+        gameHandler.broadcastRoundCompleted(gameId, round.getNumber());
 
         // round over, stats given
         awaitReceivedMessages(gameClient, 1);
         var msg = gameClient.getReceived().poll();
         ReadContext ctx = JsonPath.parse(msg);
         assertThat(ctx.<String>read("$.@type")).isEqualTo("round_completed");
-        assertThat(ctx.<Integer>read("$.round")).isEqualTo(round);
-        assertThat(ctx.<String>read("$.answer")).isEqualTo("4");
+        assertThat(ctx.<Integer>read("$.round")).isEqualTo(round.getNumber());
+        assertThat(ctx.<String>read("$.answer")).isEqualTo(round.getQuestion().getCorrectAnswer());
         assertThat(ctx.<Map<String,Integer>>read("$.stats")).containsOnly(
-            entry(question.getCorrectAnswer(), 2),
-            entry(question.getIncorrectAnswers().get(0), 0),
-            entry(question.getIncorrectAnswers().get(1), 1));
+            entry(round.getQuestion().getCorrectAnswer(), 2),
+            entry(round.getQuestion().getIncorrectAnswers().get(0), 0),
+            entry(round.getQuestion().getIncorrectAnswers().get(1), 1));
 
         gameClient.close();
     }
@@ -172,37 +180,20 @@ public class WebSocketGameHandlerSpec {
         return gameClient;
     }
 
-    private Question broadcastQuestion(GameTestClient gameClient) {
+    private Question broadcastQuestion(GameTestClient gameClient, Question question) {
         // simulate first round started
-        Question question = createQuestion();
-        gameHandler.broadcastRoundStarted(gameId, 1, question);
+        gameHandler.broadcastRoundStarted(gameId, 0);
         awaitReceivedMessages(gameClient, 1);
         String msg = gameClient.getReceived().poll();
         ReadContext ctx = JsonPath.parse(msg);
         assertThat(ctx.<String>read("$.@type")).isEqualTo("round_started");
-        assertThat(ctx.<Integer>read("$.round")).isEqualTo(1);
-        assertThat(ctx.<String>read("$.question")).isEqualTo("What is 2 + 2?");
-        assertThat(ctx.<List<String>>read("$.answers")).containsOnly("3", "4", "Cake");
+        assertThat(ctx.<Integer>read("$.round")).isEqualTo(0);
+        assertThat(ctx.<String>read("$.question")).isEqualTo(question.getText());
+
+        var answers = new ArrayList<>(question.getIncorrectAnswers());
+        answers.add(question.getCorrectAnswer());
+        assertThat(ctx.<List<String>>read("$.answers")).containsOnly(answers.toArray(new String[0]));
         return question;
-    }
-
-    private Question createQuestion() {
-        return Question.builder()
-                .category("Math")
-                .difficulty(Difficulty.easy)
-                .question("What is 2 + 2?")
-                .correctAnswer("4")
-                .incorrectAnswers(List.of("3", "Cake"))
-                .build();
-    }
-
-    private Game createGame() {
-        return Game.builder()
-            .id(gameId)
-            .category("Math")
-            .players(3)
-            .started(true)
-            .build();
     }
 
     private void awaitReceivedMessages(GameTestClient gameTestClient, int expected) {

@@ -6,13 +6,17 @@ import io.micronaut.websocket.WebSocketBroadcaster;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import reactor.core.publisher.Mono;
-import trivia.api.WebSocketGameHandler;
+import trivia.TestData;
 import trivia.domain.Game;
+import trivia.domain.Question;
 import trivia.repository.GameRepository;
 
 import javax.inject.Inject;
 
+import java.util.List;
+
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.*;
 
 @MicronautTest
@@ -44,17 +48,39 @@ public class DefaultGameServiceSpec {
     @Test
     void createGame() {
         String category = "Math";
+        List<Question> qs = TestData.createQuestions(3);
+        when(repository.createGame(category, qs)).thenReturn(Mono.just("100"));
 
-        when(repository.createGame(category)).thenReturn(Mono.just("100"));
-
-        Game g = service.createGame(category).block();
+        Game g = service.createGame(category, qs).block();
         assertThat(g).isNotNull();
         assertThat(g.getId()).isNotBlank();
-        assertThat(g.getCategory()).isEqualTo(category);
+        assertThat(g.getTitle()).isEqualTo(category);
         assertThat(g.getPlayers()).isEqualTo(0);
         assertThat(g.isStarted()).isFalse();
 
-        verify(repository, times(1)).createGame(category);
+        verify(repository, times(1)).createGame(category, qs);
+    }
+
+    @Test
+    void createGame_WithoutQuestions() {
+        Exception ex = assertThrows(IllegalArgumentException.class, () -> {
+            service.createGame("Foo", List.of()).block();
+        });
+
+        assertThat(ex.getMessage()).isEqualTo("Questions are required");
+
+        verify(repository, times(0)).createGame(anyString(), anyList());
+    }
+
+    @Test
+    void createGame_WithoutTitle() {
+        Exception ex = assertThrows(IllegalArgumentException.class, () -> {
+            service.createGame("", TestData.createQuestions(1)).block();
+        });
+
+        assertThat(ex.getMessage()).isEqualTo("Title must not be blank");
+
+        verify(repository, times(0)).createGame(anyString(), anyList());
     }
 
     @Test
@@ -65,15 +91,14 @@ public class DefaultGameServiceSpec {
 
         when(repository.addPlayer(gameId, username)).thenReturn(Mono.just(Game.builder()
             .id(gameId)
-            .category("Math")
+            .title("Math")
             .players(3)
-            .started(false)
             .build()));
 
         Game g = service.joinGame(gameId, username, sessionId).block();
         assertThat(g).isNotNull();
         assertThat(g.getId()).isNotBlank();
-        assertThat(g.getCategory()).isNotBlank();
+        assertThat(g.getTitle()).isNotBlank();
         assertThat(g.getPlayers()).isEqualTo(3);
         assertThat(g.isStarted()).isFalse();
 

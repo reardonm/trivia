@@ -9,7 +9,14 @@ import lombok.Value;
 @Builder
 public class Game {
     private String id;
-    private String category;
+
+    private String title;
+
+    private Integer round;
+
     private int players;
-    private boolean started;
+
+    public boolean isStarted() {
+        return round != null;
+    }
 }

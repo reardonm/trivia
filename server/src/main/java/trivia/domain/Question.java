@@ -16,7 +16,7 @@ public class Question {
 
     private Difficulty difficulty;
 
-    private String question;
+    private String text;
 
     private String correctAnswer;
 

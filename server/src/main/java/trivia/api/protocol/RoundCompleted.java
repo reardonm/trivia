@@ -18,6 +18,8 @@ public class RoundCompleted implements GameMessage {
 
     private Map<String,Integer> stats;
 
+    private int players;
+
     @JsonPOJOBuilder(withPrefix = "")
     public static class RoundCompletedBuilder {
     }
