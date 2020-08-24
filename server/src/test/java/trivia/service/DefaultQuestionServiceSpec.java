@@ -8,6 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import trivia.TestData;
+import trivia.TriviaConfig;
 import trivia.domain.Question;
 import trivia.repository.GameRepository;
 
@@ -41,7 +42,9 @@ public class DefaultQuestionServiceSpec {
 
     @BeforeEach
     void setup() {
-        service = new DefaultQuestionService(repository);
+        TriviaConfig config = new TriviaConfig();
+        config.setRoundsPerGame(5);
+        service = new DefaultQuestionService(repository, config);
         data = TestData.load(mapper);
     }
 
@@ -60,7 +63,7 @@ public class DefaultQuestionServiceSpec {
         List<Question> qs = data.getQuestions().subList(0, 5);
         when(repository.allocateQuestions(category, 5)).thenReturn(Flux.fromIterable(qs));
 
-        List<Question> questions = service.allocateQuestions(category, 5).block();
+        List<Question> questions = service.allocateQuestions(category).block();
         assertThat(questions).hasSize(5);
     }
 
@@ -71,7 +74,7 @@ public class DefaultQuestionServiceSpec {
         when(repository.allocateQuestions(category, 5)).thenReturn(Flux.fromIterable(qs));
 
         Exception ex = assertThrows(InsufficientDataException.class, () -> {
-            service.allocateQuestions(category, 5).block();
+            service.allocateQuestions(category).block();
         });
 
         assertThat(ex.getMessage()).isEqualTo("Not enough questions to allocate 5");

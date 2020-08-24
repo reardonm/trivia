@@ -3,6 +3,11 @@ micronaut:
     name: trivia
 redis:
   uri: redis://localhost
+trivia:
+  minimumPlayersPerGame: 3
+  roundsPerGame: 10
+  dataPath: "data"
+
 ---
 #tag::cors[]
 micronaut:

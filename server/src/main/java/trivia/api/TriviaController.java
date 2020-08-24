@@ -21,12 +21,10 @@ public class TriviaController {
 
     private final QuestionService questionService;
     private final GameService gameService;
-    private final int numRounds;
 
     public TriviaController(QuestionService questionService, GameService gameService) {
         this.questionService = Objects.requireNonNull(questionService);
         this.gameService = Objects.requireNonNull(gameService);
-        this.numRounds = 10; // FIXME: configure
     }
 
     @Get("/categories")
@@ -38,7 +36,7 @@ public class TriviaController {
 
     @Post("/games")
     Mono<HttpResponse<CreateGameResponse>> createGame(@Body @Valid CreateGameRequest request) {
-        Mono<List<Question>> questions = questionService.allocateQuestions(request.getCategory(), numRounds);
+        Mono<List<Question>> questions = questionService.allocateQuestions(request.getCategory());
         return questions.flatMap(qs -> gameService.createGame(request.getCategory(), qs))
             .map(game -> HttpResponse.created(createCreateGameResponse(game.getId()), buildGameUri(game)));
     }

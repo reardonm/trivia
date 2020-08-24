@@ -1,0 +1,4 @@
+trivia:
+  minimumPlayersPerGame: 3
+  roundsPerGame: 3
+  dataPath: no-used-for-test

@@ -7,6 +7,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import reactor.core.publisher.Mono;
 import trivia.TestData;
+import trivia.TriviaConfig;
 import trivia.domain.Game;
 import trivia.domain.Question;
 import trivia.repository.GameRepository;
@@ -42,7 +43,9 @@ public class DefaultGameServiceSpec {
 
     @BeforeEach
     void setup() {
-        service = new DefaultGameService(repository);
+        TriviaConfig config = new TriviaConfig();
+        config.setMinimumPlayersPerGame(3);
+        service = new DefaultGameService(repository, config);
     }
 
     @Test

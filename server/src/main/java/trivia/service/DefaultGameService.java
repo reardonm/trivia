@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import trivia.TriviaConfig;
 import trivia.domain.Game;
 import trivia.domain.Question;
 import trivia.domain.Round;
@@ -26,8 +27,8 @@ public class DefaultGameService implements GameService {
 
     private final GameRepository repository;
 
-    public DefaultGameService(GameRepository gameRepository) {
-        this.minPlayers = 3; // TODO: configure
+    public DefaultGameService(GameRepository gameRepository, TriviaConfig config) {
+        this.minPlayers = config.getMinimumPlayersPerGame();
         this.repository = Objects.requireNonNull(gameRepository);
     }
 
@@ -55,12 +56,16 @@ public class DefaultGameService implements GameService {
     @Override
     public Mono<Round> findRound(String gameId, int round) {
         return this.repository.findQuestionForRound(gameId, round)
-            .flatMap(q -> this.repository.findPlayerCount(gameId, round).map(c -> Round.builder()
-                .number(round)
-                .question(q)
-                .players(c)
-                .build()));
+            .flatMap(q -> {
+                log.debug("Question for game[{}] round[{}]: {}", gameId, round, q);
+                return this.repository.findPlayerCount(gameId, round).map(c -> Round.builder()
+                    .number(round)
+                    .question(q)
+                    .players(c)
+                    .build());
+            });
     }
+
 
     @Override
     public Mono<Boolean> answerQuestion(String gameId, String answer) {
@@ -85,8 +90,9 @@ public class DefaultGameService implements GameService {
         return repository.subscribeToRoundsChannel();
     }
 
-    @Scheduled(fixedDelay = "1s", initialDelay = "5s")
-    public void pollForGamesWithEnoughPlayers() {
+    @Scheduled(fixedDelay = "1s", initialDelay = "1s")
+    public void pollPersistentTasks() {
+        log.info("poll");
         Duration roundDuration = Duration.ofSeconds(15);
         Duration delayStartRound = Duration.ofSeconds(3);
         repository.advancePendingRounds(delayStartRound, roundDuration);

@@ -13,8 +13,7 @@ public interface QuestionService {
     /**
      * Allocate random questions from the given category
      * @param category the category to allocate questions from
-     * @param n the number of questions to give
      * @return the questions
      */
-    Mono<List<Question>> allocateQuestions(String category, int n);
+    Mono<List<Question>> allocateQuestions(String category);
 }

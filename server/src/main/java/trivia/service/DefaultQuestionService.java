@@ -2,6 +2,7 @@ package trivia.service;
 
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import trivia.TriviaConfig;
 import trivia.domain.Question;
 import trivia.repository.GameRepository;
 
@@ -13,9 +14,11 @@ import java.util.Objects;
 public class DefaultQuestionService implements QuestionService {
 
     private final GameRepository repository;
+    private final int numRounds;
 
-    public DefaultQuestionService(GameRepository repository) {
+    public DefaultQuestionService(GameRepository repository, TriviaConfig config) {
         this.repository = Objects.requireNonNull(repository);
+        this.numRounds = config.getRoundsPerGame();
     }
 
     @Override
@@ -24,9 +27,9 @@ public class DefaultQuestionService implements QuestionService {
     }
 
     @Override
-    public Mono<List<Question>> allocateQuestions(String category, int n) {
-        return repository.allocateQuestions(category, n).collectList()
-            .filter(qs -> qs.size() == n)
-            .switchIfEmpty(Mono.error(() -> new InsufficientDataException("Not enough questions to allocate " + n)));
+    public Mono<List<Question>> allocateQuestions(String category) {
+        return repository.allocateQuestions(category, numRounds).collectList()
+            .filter(qs -> qs.size() == numRounds)
+            .switchIfEmpty(Mono.error(() -> new InsufficientDataException("Not enough questions to allocate " + numRounds)));
     }
 }

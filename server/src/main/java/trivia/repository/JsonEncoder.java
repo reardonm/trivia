@@ -2,12 +2,14 @@ package trivia.repository;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.extern.slf4j.Slf4j;
 import trivia.domain.Question;
 import trivia.domain.RoundEvent;
 
 import javax.inject.Singleton;
 import java.util.Objects;
 
+@Slf4j
 @Singleton
 public class JsonEncoder {
 
@@ -37,7 +39,7 @@ public class JsonEncoder {
         try {
             return mapper.readValue(data, RoundEvent.class);
         } catch (JsonProcessingException e) {
-            throw new RepositoryExpection("Failed to decode RoundEvent from repository", e);
+            throw new RepositoryExpection("Failed to decode RoundEvent from repository: " + data, e);
         }
     }
 

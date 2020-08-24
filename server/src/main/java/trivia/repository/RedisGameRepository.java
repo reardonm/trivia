@@ -80,7 +80,7 @@ public class RedisGameRepository implements GameRepository {
         var commands = this.connection.reactive();
         String key = questionKey(category);
         long timestamp = Instant.now().toEpochMilli();
-        return commands.zrange(key, 0, stop)
+        return commands.zrange(key, 0, stop - 1)
             // score the question with the timestamp so it pushes to the bottom and we don't see the same one every time
             .doOnNext(member -> commands.zadd(key, timestamp, member).subscribe())
             .map(encoder::decodeQuestion);
@@ -118,9 +118,6 @@ public class RedisGameRepository implements GameRepository {
         return findGameWithCommands(gameId, this.connection.reactive());
     }
 
-    /*
-     * Utility method to allow for reuse and pipelining by giving an instance of RedisReactiveCommands
-     */
     private Mono<Game> findGameWithCommands(String gameId, RedisReactiveCommands<String, String> commands) {
         return commands.scard(playersKey(gameId))        // count players set, O(1)
             .zipWith(commands.hgetall(gameKey(gameId)))  // find game fields
@@ -136,8 +133,10 @@ public class RedisGameRepository implements GameRepository {
     @Override
     public Mono<Question> findQuestionForRound(String gameId, int round) {
         var commands = connection.reactive();
-        return commands.hget(gameKey(gameId) + ":round:" + round, QUESTION)
-            .map(encoder::decodeQuestion);
+        return commands.hget(roundsKey(gameId, round), QUESTION)
+            .map(encoder::decodeQuestion)
+            .doOnSuccess(q -> log.debug("findQuestionForRound: Game[{}] Round[{}] {}", gameId, round, q));
+
     }
 
     @Override
@@ -148,7 +147,11 @@ public class RedisGameRepository implements GameRepository {
 
     @Override
     public Mono<Integer> findPlayerCount(String gameId, int round) {
-        throw new UnsupportedOperationException("fix me");
+        var commands = connection.reactive();
+        return commands.hget(roundsKey(gameId, round), PLAYERS).map(v -> {
+            log.debug("wtf");
+            return Integer.parseInt(v);
+        });
     }
 
     @Override
@@ -164,6 +167,7 @@ public class RedisGameRepository implements GameRepository {
                     ScoredValue<String> scoredGame = ScoredValue.fromNullable(g.getPlayers(), gameId);
                     commands.zadd(GAME_PENDING_KEY, scoredGame).subscribe();
                 }
+                log.debug("Added player[{}] to Game[{}]", username, gameId);
             });
     }
 
@@ -186,7 +190,9 @@ public class RedisGameRepository implements GameRepository {
             if (roundEvent.getStarted()) {
                 commands.hincrby(gameKey, ROUND, 1);
                 Long currentPlayers = commands.scard(playersKey);
-                commands.hset(roundsKey, PLAYERS, String.valueOf(currentPlayers));
+                if (currentPlayers != null) {
+                    commands.hset(roundsKey, PLAYERS, currentPlayers.toString());
+                }
                 RoundEvent nextEvent = RoundEvent.builder()
                     .gameId(roundEvent.getGameId())
                     .round(roundEvent.getRound())
@@ -238,8 +244,9 @@ public class RedisGameRepository implements GameRepository {
 
     @Override
     public Flux<String> subscribeToGameChannel() {
-        RedisPubSubReactiveCommands<String, String> commands = subscribeToChannel(GAME_CHANNEL_KEY);
-        return commands.observeChannels().map(channelMessage -> {
+        var commands = subscribeToChannel(GAME_CHANNEL_KEY);
+        return commands.observeChannels().filter(channelMessage ->  channelMessage.getChannel().equals(GAME_CHANNEL_KEY))
+            .map(channelMessage -> {
             log.debug("Channel[{}] {}", channelMessage.getChannel(), channelMessage.getMessage());
             return channelMessage.getMessage();
         });
@@ -247,18 +254,17 @@ public class RedisGameRepository implements GameRepository {
 
     @Override
     public Flux<RoundEvent> subscribeToRoundsChannel() {
-        RedisPubSubReactiveCommands<String, String> commands = subscribeToChannel(ROUNDS_CHANNEL_KEY);
-        return commands.observeChannels().map(channelMessage -> {
-            log.debug("Channel[{}] {}", channelMessage.getChannel(), channelMessage.getMessage());
+        var commands = subscribeToChannel(ROUNDS_CHANNEL_KEY);
+        return commands.observeChannels().filter(channelMessage ->  channelMessage.getChannel().equals(ROUNDS_CHANNEL_KEY))
+            .map(channelMessage -> {
+            log.debug(">>>> Channel[{}] {}", channelMessage.getChannel(), channelMessage.getMessage());
             return encoder.decodeRoundEvent(channelMessage.getMessage());
         });
     }
 
     private RedisPubSubReactiveCommands<String, String> subscribeToChannel(String channelKey) {
-        RedisPubSubReactiveCommands<String, String> commands = pubSubConnection.reactive();
-        commands.subscribe(channelKey)
-            .doOnNext(msg -> log.debug("Channel[{}] {}", channelKey, msg))
-            .subscribe();
+        var commands = pubSubConnection.reactive();
+        commands.subscribe(channelKey).subscribe();
         return commands;
     }
 
@@ -279,7 +285,7 @@ public class RedisGameRepository implements GameRepository {
     }
 
     private String roundsKey(String gameId, int round) {
-        return String.format("%s%s:%d", ROUNDS_KEY_PREFIX, gameId, round);
+        return String.format("%s%d:%s%s", ROUNDS_KEY_PREFIX, round, GAME_KEY_PREFIX, gameId);
     }
 
     private String gameChannel(String gameId) {

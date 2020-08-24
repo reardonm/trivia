@@ -72,7 +72,7 @@ public class TrivaControllerSpec {
     void post_create_game() {
         String category = "Math";
         int rounds = 10;
-        when(questionService.allocateQuestions(category, rounds)).thenReturn(Mono.just(TestData.createQuestions(rounds)));
+        when(questionService.allocateQuestions(category)).thenReturn(Mono.just(TestData.createQuestions(rounds)));
         when(gameService.createGame(eq(category), anyList())).thenReturn(Mono.just(Game.builder()
             .id("100")
             .title(category)
@@ -87,7 +87,7 @@ public class TrivaControllerSpec {
         ReadContext ctx = JsonPath.parse(response.body());
         assertThat(ctx.<String>read("$.gameId")).isNotBlank();
 
-        verify(questionService, times(1)).allocateQuestions(eq(category), eq(rounds));
+        verify(questionService, times(1)).allocateQuestions(eq(category));
         verify(gameService, times(1)).createGame(eq(category), anyList());
     }
 
